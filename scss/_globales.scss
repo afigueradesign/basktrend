@@ -1,0 +1,68 @@
+$fuente1: 'Bai Jamjuree', sans-serif;
+$fuente2: 'Mukta', sans-serif;
+$colorPrincipal: black;
+$colorSecundario: orange;
+
+@mixin botonPrincipal {
+    font-family: $fuente2;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 18px 56px;
+    background-color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+@mixin titulo-h1{
+    font-family: $fuente1;
+    font-weight: 700;
+    font-size: 5.4rem;
+}
+
+@mixin titulo-h2{
+    font-family: $fuente1;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+@mixin titulo-h3{
+    font-family: $fuente1;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+@mixin parrafos-base {
+    font-family: $fuente2;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+
+
+*{
+    font-size: 62.5%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.titulo-Sección-h1{
+    @include titulo-h1;
+}
+
+.titulo-Sección-h3{
+    @include titulo-h3;
+}
+
+.titulo-Sección-h2{
+    @include titulo-h2;
+}
+
+.parrafos-base{
+    @include parrafos-base;
+}
+
+.boton-principal{
+    @include botonPrincipal;
+}

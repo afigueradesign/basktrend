@@ -1,0 +1,20 @@
+.hero-juegos{
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    height: 400px;
+
+    background-color: aqua;
+
+    .hero-juegos__textos{
+        @include titulo-h1;
+        width: 50%;
+
+        .hero-juegos__textos{
+            padding-right: 40px;
+        }
+    }
+
+
+
+}

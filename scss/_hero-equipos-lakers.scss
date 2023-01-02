@@ -1,0 +1,13 @@
+.equipo__contenido-principal{
+    .hero-equipos{
+        background-color: aqua;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .hero-equipos__titulo-Equipo{
+            margin-bottom: 40px;
+        }
+    }
+}

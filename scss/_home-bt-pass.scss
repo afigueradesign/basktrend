@@ -1,0 +1,116 @@
+.home-bt-Pass{
+    padding: 0 5%;
+    margin-top: 100px;
+
+    .titulo-Sección-h2{
+        @include titulo-h2;
+        text-align: center;
+    }
+
+    .home-bt-Pass__contenedor{
+        display: flex;
+        margin-top: 100px;
+        align-items: center;
+
+        .home-bt-Pass__textos{
+            width: 35%;
+
+            .titulo-Sección-h3{
+                @include titulo-h3;
+                margin-bottom: 40px;
+            }
+  
+            p{
+                font-size: 2rem;
+                font-family: $fuente2;
+                font-weight: 400;
+                color: black;
+            }
+        }
+
+        .home-bt-Pass__img{
+            width: 65%; 
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+.home-fortalezas{
+    margin-top: 100px;
+    padding: 0 5%;
+
+    h2{
+        font-size: 14rem;
+        font-family: $fuente1;
+        font-weight: 700;
+        color: #F0F0F0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .home-fortalezas__contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "col-l col-c col-r"
+        "col-l col-c col-r"
+        "col-l col-c col-r" ;
+
+        .col-l{
+            grid-area: col-l;
+            padding-right: 40px;
+            
+            .col-l-contenido{
+
+                h3{
+                    margin-bottom: 14px;
+                }
+                p{
+                    margin-bottom: 40px;
+                }
+                .boton-principal{
+                    @include botonPrincipal;
+                }
+                :nth-child(1){
+                    margin-top: 88px;
+                }
+
+            }
+
+            
+        }
+
+        }
+        .col-c{
+            grid-area: col-c;
+
+        }
+
+        .col-r{
+            grid-area: col-r;
+            padding-left: 40px;
+
+            .col-r-contenido{
+                
+
+                h3{
+                    margin-bottom: 14px;
+                }
+                p{
+                    margin-bottom: 40px;
+                }
+    
+
+            }
+        }
+    }
+
+    .prueba{
+        h2{
+            font-size: 24px;
+        }
+    }
+

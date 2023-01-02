@@ -1,0 +1,28 @@
+.barra-dias{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 100px 0;
+    align-items: center;
+
+    .barra-dias__flecha-izq{
+        align-items: center;
+    }
+
+    .barra-dias__contenedor{  
+        
+        padding: 0 32px;
+       
+        .semana-dia{
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: $fuente1;        
+         }    
+        .numero-dia{
+             text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: $fuente1;        
+        }
+    }
+}

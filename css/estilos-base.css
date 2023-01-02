@@ -1,0 +1,803 @@
+@charset "UTF-8";
+* {
+  font-size: 62.5%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.titulo-Sección-h3 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.titulo-Sección-h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.parrafos-base {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.header__contenedor {
+  display: flex;
+  height: 100px;
+  padding: 0 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__contenedor .header__logo {
+  font-size: 4rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+.header__contenedor .header__menuNavegacion {
+  display: flex;
+}
+.header__contenedor .header__menuNavegacion li {
+  list-style: none;
+}
+.header__contenedor .header__menuNavegacion li a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
+}
+.header__contenedor .header__menuNavegacion li a:hover {
+  color: orange;
+}
+.header__contenedor .header__menuRegistro {
+  display: flex;
+  align-items: center;
+}
+.header__contenedor .header__menuRegistro li {
+  list-style: none;
+}
+.header__contenedor .header__menuRegistro li a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
+}
+.header__contenedor .header__menuRegistro li a:hover {
+  color: orange;
+}
+.header__contenedor .header__menuRegistro span {
+  border-right: 2px solid black;
+  height: 24px;
+  margin-right: 15px;
+}
+.header__contenedor .header__menuRegistro span :hover {
+  color: orange;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  height: 700px;
+}
+.hero-container .hero-textos {
+  padding: 0 5%;
+  width: 45%;
+}
+.hero-container .hero-textos h1 {
+  font-size: 5.2rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+}
+.hero-container .hero-textos p {
+  margin-top: 38px;
+  font-size: 2.4rem;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  margin-bottom: 58px;
+}
+.hero-container .hero-textos a {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 18px 56px;
+  background-color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.hero-container .hero-img-prvisional {
+  height: 700px;
+}
+
+.partidoEnVivo {
+  padding: 0 5%;
+  height: 412px;
+}
+.partidoEnVivo .partidoEnVivo__textoFondo {
+  z-index: 1;
+  height: 412px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16.6rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #E6E6E6;
+  color: transparent;
+}
+.partidoEnVivo .partidoEnVivo__contenedor {
+  display: grid;
+  grid-template-columns: 32% 36% 32%;
+  grid-template-rows: 1fr;
+  z-index: 1;
+  margin-top: -280px;
+}
+.partidoEnVivo .partidoEnVivo__contenedor .nombreDeCiudad {
+  font-size: 2rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 5px;
+}
+.partidoEnVivo .partidoEnVivo__contenedor .nombreDeEquipo {
+  font-size: 3rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  color: black;
+  margin: 0 0 14px 0;
+}
+.partidoEnVivo .partidoEnVivo__contenedor .estadisticasEquipo {
+  font-size: 1.8rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+}
+.partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo01 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo01 img {
+  height: 188px;
+}
+.partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo01 .equipo__textos {
+  display: flex;
+  justify-content: flex-end;
+}
+.partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo02 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo02 img {
+  height: 188px;
+}
+.partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo02 .equipo__textos {
+  display: flex;
+  justify-content: flex-start;
+}
+.partidoEnVivo .partidoEnVivo__contenedor .partidoEnVivo__horarios {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-size: 7rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.OtrosPartidosEnVivo {
+  display: flex;
+  overflow: hidden;
+}
+.OtrosPartidosEnVivo .OtrosPartidosEnVivo__partido-Contenedor {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70px;
+  border: 2px #E3E3E3 solid;
+  width: 600px;
+  padding: 20px;
+}
+.OtrosPartidosEnVivo .OtrosPartidosEnVivo__partido-Contenedor .OtrosPartidosEnVivo__horario {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.OtrosPartidosEnVivo .OtrosPartidosEnVivo__partido-Contenedor .OtrosPartidosEnVivo__horario img {
+  height: 60%;
+}
+.OtrosPartidosEnVivo .OtrosPartidosEnVivo__partido-Contenedor .OtrosPartidosEnVivo__horario p {
+  font-size: 1.4rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  padding: 0 10px;
+}
+.OtrosPartidosEnVivo .OtrosPartidosEnVivo__partido-Contenedor .OtrosPartidosEnVivo__fecha {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.home-bt-Pass {
+  padding: 0 5%;
+  margin-top: 100px;
+}
+.home-bt-Pass .titulo-Sección-h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+}
+.home-bt-Pass .home-bt-Pass__contenedor {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+}
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos {
+  width: 35%;
+}
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos .titulo-Sección-h3 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos p {
+  font-size: 2rem;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__img {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-fortalezas {
+  margin-top: 100px;
+  padding: 0 5%;
+}
+.home-fortalezas h2 {
+  font-size: 14rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  color: #F0F0F0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.home-fortalezas .home-fortalezas__contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "col-l col-c col-r" "col-l col-c col-r" "col-l col-c col-r";
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l {
+  grid-area: col-l;
+  padding-right: 40px;
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido h3 {
+  margin-bottom: 14px;
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido p {
+  margin-bottom: 40px;
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido .boton-principal {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 18px 56px;
+  background-color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido :nth-child(1) {
+  margin-top: 88px;
+}
+.home-fortalezas .col-c {
+  grid-area: col-c;
+}
+.home-fortalezas .col-r {
+  grid-area: col-r;
+  padding-left: 40px;
+}
+.home-fortalezas .col-r .col-r-contenido h3 {
+  margin-bottom: 14px;
+}
+.home-fortalezas .col-r .col-r-contenido p {
+  margin-bottom: 40px;
+}
+
+.prueba h2 {
+  font-size: 24px;
+}
+
+.pruebaAPP {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  height: 600px;
+  background-color: #F6F6F6;
+}
+.pruebaAPP .pruebaAPP__col-l {
+  padding-right: 5%;
+  width: 40%;
+}
+.pruebaAPP .pruebaAPP__col-l .titulo-Sección-h3 {
+  margin-bottom: 2.6rem;
+}
+.pruebaAPP .pruebaAPP__col-r {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.pruebaAPP .pruebaAPP__col-l__logos-Store {
+  display: flex;
+}
+.pruebaAPP .pruebaAPP__col-l__logos-Store img {
+  margin-top: 26px;
+  width: 190px;
+}
+.pruebaAPP .pruebaAPP__col-l__logos-Store :nth-child(1) {
+  margin-right: 40px;
+}
+
+.tienesElControl {
+  padding: 0 5%;
+  margin-bottom: 100px;
+}
+.tienesElControl h2 {
+  text-align: center;
+  margin: 100px 0 70px 0;
+}
+.tienesElControl .tienesElControl__cards-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  justify-items: center;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  padding: 20px 20px 40px 20px;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards {
+  padding: 20px;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__img {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 246px 70px;
+  justify-items: center;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards img:nth-child(1) {
+  width: 100%;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards img:nth-child(2) {
+  margin-top: -30px;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos {
+  text-align: center;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos h3 {
+  margin-bottom: 16px;
+}
+
+.home-estadisticas h2 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.home-estadisticas .home-estadisticas__contenedor {
+  display: flex;
+  padding: 0 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador {
+  display: flex;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador .textos__numeroJugador {
+  font-size: 50px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  background-color: #D9D9D9;
+  padding: 10px;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador .textos__nombreJugador {
+  font-size: 40px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  margin-left: 18px;
+  margin-top: 10px;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__marcador {
+  display: flex;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__marcador .marcador-stats {
+  margin-top: 60px;
+  padding-right: 30px;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__marcador .marcador-stats .marcador-stats__texto01 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__marcador .marcador-stats .marcador-stats__texto02 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 16px;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor img {
+  padding-right: 24px;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor__nombreJugador p:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor__nombreJugador p:nth-child(2) {
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.ultimosResultados {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+.ultimosResultados .ultimosResultados__col-l {
+  padding-left: 5%;
+}
+.ultimosResultados .ultimosResultados__col-l h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor {
+  display: flex;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards {
+  margin-right: 22px;
+  background-color: #D9D9D9;
+  width: 400px;
+  height: 274px;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 50px;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__fecha {
+  font-size: 1.6rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__contenedor .ultimosResultados__col-l__cards__equipo img {
+  width: 84px;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__contenedor .ultimosResultados__col-l__cards__equipo .ultimosResultados__col-l__cards__textos {
+  text-align: center;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__contenedor .ultimosResultados__col-l__cards__equipo .ultimosResultados__col-l__cards__textos p:nth-child(1) {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 10px 0;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__contenedor .ultimosResultados__col-l__cards__equipo .ultimosResultados__col-l__cards__textos p:nth-child(2) {
+  font-size: 3.4rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards_versus {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__boton {
+  display: flex;
+  justify-content: center;
+}
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__boton .boton-principal {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 18px 56px;
+  background-color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.tienda-oficial {
+  margin-top: 100px;
+  padding: 0 5%;
+}
+.tienda-oficial .titulo-Sección-h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.tienda-oficial .tienda-oficial__contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+}
+.tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+  justify-items: center;
+}
+.tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards a {
+  margin-bottom: 20px;
+}
+.tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards p {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.ultimas-noticias {
+  padding: 0 5%;
+  margin-top: 100px;
+}
+.ultimas-noticias .titulo-Sección-h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.ultimas-noticias .ultimas-noticias__contenedor {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 100%;
+}
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 234px;
+  margin-right: 20px;
+  padding: 18px;
+  background-color: cadetblue;
+}
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards p {
+  text-align: left;
+}
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__contenedor__cards__etiqueta-fehca {
+  background-color: red;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: white;
+  width: 63px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__contenedor__cards__titulo-grande {
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__contenedor__cards__titulo-pequeño {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.ultimas-noticias .ultimas-noticias__contenedor__cards:nth-child(3) {
+  margin-right: 0;
+}
+.ultimas-noticias .ultimas-noticias__boton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.ultimas-noticias .ultimas-noticias__boton .boton-principal {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 18px 56px;
+  background-color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.home-testimonios .home-testimonios__contenedor {
+  display: flex;
+  background-color: #F6F6F6;
+  height: 620px;
+  margin-top: 300px;
+  padding-right: 5%;
+}
+.home-testimonios .home-testimonios__contenedor img {
+  margin-top: -200px;
+  z-index: 2;
+  height: 820px;
+}
+.home-testimonios .home-testimonios__contenedor .home-testimonios__textos {
+  padding-left: 120px;
+}
+.home-testimonios .home-testimonios__contenedor .home-testimonios__textos h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 12rem;
+  font-weight: 700;
+  color: #F0F0F0;
+  text-align: center;
+}
+.home-testimonios .home-testimonios__contenedor .home-testimonios__textos .home-testimonios__comillas {
+  font-family: "Mukta", sans-serif;
+  font-size: 8rem;
+  font-weight: 400;
+}
+.home-testimonios .home-testimonios__contenedor .home-testimonios__textos .home-testimonios__lista-de-testimonios {
+  font-family: "Mukta", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  padding-right: 60px;
+  margin: 0;
+}
+.home-testimonios .home-testimonios__contenedor .home-testimonios__textos .home-testimonios__persona {
+  font-family: "Mukta", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.home-testimonios .home-testimonios__contenedor .home-testimonios__navegacion {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.home-testimonios .home-testimonios__contenedor .home-testimonios__navegacion .home-testimonios__navegacion__puntos {
+  border: solid 2px #8f8f8f;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+}
+.home-testimonios .home-testimonios__contenedor .home-testimonios__navegacion :hover {
+  background-color: #8f8f8f;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 34px 5%;
+  height: 280px;
+  background-color: #979797;
+  display: grid;
+  grid-template-columns: 35% 15% 20% 30%;
+  grid-template-rows: 1fr;
+  text-transform: uppercase;
+}
+footer .footer__titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  margin-bottom: 20px;
+}
+footer .footer__col1 {
+  width: 80%;
+}
+footer .footer__col1 .footer__logo {
+  font-size: 3.4rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin-bottom: 30px;
+}
+footer .footer__col1 p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  margin-bottom: 14px;
+}
+footer .footer__col1 .footer__copy {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+footer .footer__col2 ul {
+  padding: 0;
+}
+footer .footer__col2 ul li {
+  list-style: none;
+}
+footer .footer__col2 ul li .footer__links {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+footer .footer__col3 .footer__col3_contenedor {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin-top: 14px;
+}
+footer .footer__col3 .footer__col3_contenedor i {
+  font-size: 20px;
+  color: black;
+}
+footer .footer__col3 .footer__col3_contenedor a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding-left: 24px;
+}
+footer .footer__col4 .footer__boton-suscribirte {
+  display: flex;
+}
+footer .footer__col4 .footer__boton-suscribirte .boton-suscribirte__email {
+  width: 296px;
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+  border: 0;
+}
+footer .footer__col4 .footer__boton-suscribirte .boton-suscribirte__boton {
+  width: 100px;
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+footer .footer__col4 p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  margin: 24px 0 16px;
+}
+footer .footer__col4 .footer__texto-Social-Media {
+  display: flex;
+}
+footer .footer__col4 .footer__texto-Social-Media a {
+  padding-right: 10px;
+  text-decoration: none;
+}
+footer .footer__col4 .footer__texto-Social-Media a i {
+  font-size: 24px;
+  color: black;
+}
+
+/*# sourceMappingURL=estilos-base.css.map */

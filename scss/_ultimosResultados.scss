@@ -1,0 +1,87 @@
+.ultimosResultados{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    background-color: #F6F6F6;    
+   
+   
+   
+
+    .ultimosResultados__col-l{
+        padding-left: 5%;
+    
+        h2{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .ultimosResultados__col-l__contenedor{
+            display: flex;
+            
+           
+            
+
+            .ultimosResultados__col-l__cards{
+                
+                margin-right: 22px;
+                background-color: #D9D9D9;
+                width: 400px;
+                height: 274px;
+                text-align: center;
+                padding-top: 40px;
+                margin-bottom: 50px;
+
+
+                .ultimosResultados__col-l__cards__fecha{
+                    font-size: 1.6rem;
+                    font-family: $fuente1;
+                    font-weight: 300;
+                    padding-bottom: 20px;
+                    
+                }
+
+                .ultimosResultados__col-l__cards__contenedor{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    
+
+                    .ultimosResultados__col-l__cards__equipo{
+                        img{
+                            width: 84px;
+                        }
+                        .ultimosResultados__col-l__cards__textos{
+                            text-align: center;
+                            p:nth-child(1){
+                                font-size: 2.4rem;
+                                font-weight: 700;
+                                font-family: $fuente1;
+                                margin: 10px 0;
+                            }
+                            p:nth-child(2){
+                                font-size: 3.4rem;
+                                font-weight: 700;
+                                font-family: $fuente1;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .ultimosResultados__col-l__cards_versus{
+                font-size: 2.0rem;
+                font-weight: 700;
+                font-family: $fuente1;
+            }
+        }
+        
+        .ultimosResultados__boton{
+            display: flex;
+            justify-content: center;
+            .boton-principal{
+            @include botonPrincipal
+            }
+        }
+    }
+}

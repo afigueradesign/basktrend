@@ -1,0 +1,441 @@
+@charset "UTF-8";
+* {
+  font-size: 62.5%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.titulo-Sección-h1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 5.4rem;
+}
+
+.titulo-Sección-h3 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.titulo-Sección-h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.parrafos-base {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.header__contenedor {
+  display: flex;
+  height: 100px;
+  padding: 0 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__contenedor .header__logo {
+  font-size: 4rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+.header__contenedor .header__menuNavegacion {
+  display: flex;
+}
+.header__contenedor .header__menuNavegacion li {
+  list-style: none;
+}
+.header__contenedor .header__menuNavegacion li a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
+}
+.header__contenedor .header__menuNavegacion li a:hover {
+  color: orange;
+}
+.header__contenedor .header__menuRegistro {
+  display: flex;
+  align-items: center;
+}
+.header__contenedor .header__menuRegistro li {
+  list-style: none;
+}
+.header__contenedor .header__menuRegistro li a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
+}
+.header__contenedor .header__menuRegistro li a:hover {
+  color: orange;
+}
+.header__contenedor .header__menuRegistro span {
+  border-right: 2px solid black;
+  height: 24px;
+  margin-right: 15px;
+}
+.header__contenedor .header__menuRegistro span :hover {
+  color: orange;
+}
+
+.hero-pase-de-liga {
+  height: 700px;
+  background-color: beige;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.hero-pase-de-liga .hero-pase-de-liga__textos {
+  padding-right: 100px;
+  width: 66.66%;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan {
+  background-color: white;
+  width: 400px;
+  padding: 48px 28px;
+  height: 610px;
+  margin-bottom: -200px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan .card-Plan__titulo {
+  font-size: 4.4rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan .card-Plan__parrafo {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan .card-Plan__precio-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan .card-Plan__precio-contenedor .card-Plan__precio-simbolo {
+  font-size: 3.4rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin-right: 16px;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan .card-Plan__precio-contenedor .card-Plan__precio-cantidad {
+  font-size: 5.4rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan .card-Plan__temporada {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan .card-Plan__boton {
+  display: flex;
+  justify-content: center;
+}
+.hero-pase-de-liga .hero-pase-de-liga__card-Plan .card-Plan__boton .boton-principal {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 18px 56px;
+  background-color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.home-bt-Pass {
+  padding: 0 5%;
+  margin-top: 100px;
+}
+.home-bt-Pass .titulo-Sección-h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+}
+.home-bt-Pass .home-bt-Pass__contenedor {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+}
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos {
+  width: 35%;
+}
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos .titulo-Sección-h3 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos p {
+  font-size: 2rem;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__img {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-fortalezas {
+  margin-top: 100px;
+  padding: 0 5%;
+}
+.home-fortalezas h2 {
+  font-size: 14rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  color: #F0F0F0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.home-fortalezas .home-fortalezas__contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "col-l col-c col-r" "col-l col-c col-r" "col-l col-c col-r";
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l {
+  grid-area: col-l;
+  padding-right: 40px;
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido h3 {
+  margin-bottom: 14px;
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido p {
+  margin-bottom: 40px;
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido .boton-principal {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 18px 56px;
+  background-color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido :nth-child(1) {
+  margin-top: 88px;
+}
+.home-fortalezas .col-c {
+  grid-area: col-c;
+}
+.home-fortalezas .col-r {
+  grid-area: col-r;
+  padding-left: 40px;
+}
+.home-fortalezas .col-r .col-r-contenido h3 {
+  margin-bottom: 14px;
+}
+.home-fortalezas .col-r .col-r-contenido p {
+  margin-bottom: 40px;
+}
+
+.prueba h2 {
+  font-size: 24px;
+}
+
+.pruebaAPP {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  height: 600px;
+  background-color: #F6F6F6;
+  margin-top: 100px;
+}
+.pruebaAPP .pruebaAPP__col-l {
+  padding-right: 5%;
+  width: 40%;
+}
+.pruebaAPP .pruebaAPP__col-l .titulo-Sección-h3 {
+  margin-bottom: 2.6rem;
+}
+.pruebaAPP .pruebaAPP__col-r {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.pruebaAPP .pruebaAPP__col-l__logos-Store {
+  display: flex;
+}
+.pruebaAPP .pruebaAPP__col-l__logos-Store img {
+  margin-top: 26px;
+  width: 190px;
+}
+.pruebaAPP .pruebaAPP__col-l__logos-Store :nth-child(1) {
+  margin-right: 40px;
+}
+
+.tienesElControl {
+  padding: 0 5%;
+  margin-bottom: 100px;
+}
+.tienesElControl h2 {
+  text-align: center;
+  margin: 100px 0 70px 0;
+}
+.tienesElControl .tienesElControl__cards-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  justify-items: center;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  padding: 20px 20px 40px 20px;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards {
+  padding: 20px;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__img {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 246px 70px;
+  justify-items: center;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards img:nth-child(1) {
+  width: 100%;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards img:nth-child(2) {
+  margin-top: -30px;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos {
+  text-align: center;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos h3 {
+  margin-bottom: 16px;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 34px 5%;
+  height: 280px;
+  background-color: #979797;
+  display: grid;
+  grid-template-columns: 35% 15% 20% 30%;
+  grid-template-rows: 1fr;
+  text-transform: uppercase;
+}
+footer .footer__titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  margin-bottom: 20px;
+}
+footer .footer__col1 {
+  width: 80%;
+}
+footer .footer__col1 .footer__logo {
+  font-size: 3.4rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin-bottom: 30px;
+}
+footer .footer__col1 p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  margin-bottom: 14px;
+}
+footer .footer__col1 .footer__copy {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+footer .footer__col2 ul {
+  padding: 0;
+}
+footer .footer__col2 ul li {
+  list-style: none;
+}
+footer .footer__col2 ul li .footer__links {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+footer .footer__col3 .footer__col3_contenedor {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin-top: 14px;
+}
+footer .footer__col3 .footer__col3_contenedor i {
+  font-size: 20px;
+  color: black;
+}
+footer .footer__col3 .footer__col3_contenedor a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding-left: 24px;
+}
+footer .footer__col4 .footer__boton-suscribirte {
+  display: flex;
+}
+footer .footer__col4 .footer__boton-suscribirte .boton-suscribirte__email {
+  width: 296px;
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+  border: 0;
+}
+footer .footer__col4 .footer__boton-suscribirte .boton-suscribirte__boton {
+  width: 100px;
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+footer .footer__col4 p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  margin: 24px 0 16px;
+}
+footer .footer__col4 .footer__texto-Social-Media {
+  display: flex;
+}
+footer .footer__col4 .footer__texto-Social-Media a {
+  padding-right: 10px;
+  text-decoration: none;
+}
+footer .footer__col4 .footer__texto-Social-Media a i {
+  font-size: 24px;
+  color: black;
+}
+
+/*# sourceMappingURL=pase-de-liga-estilos.css.map */

@@ -1,0 +1,41 @@
+.equipo-contenido-complementario{
+    padding: 0 5%;
+    margin: 100px 0;
+
+    
+
+    .equipo-contenido-complementario__articulos{
+
+        .titulo-Sección-h1{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+
+        .equipo-contenido-complementario__contenedor{        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        justify-items: center;
+
+
+        .equipo-contenido-complementario__contenido{
+            img{
+                margin-bottom: 30px;
+                
+            }
+
+            p{
+                font-size: 2rem;
+                font-weight: 700;
+                font-family: $fuente1;
+                text-align: center;
+            }
+        }
+
+    }
+
+       
+}
+
+}

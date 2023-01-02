@@ -1,0 +1,57 @@
+.equipo-contenedor{
+
+    .proximo-partido{
+        background-color: gainsboro;
+        margin-left: 20px;
+        padding: 56px;
+        margin-bottom: 80px;
+
+        .proximo-partido__contenedor{
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 1fr;
+
+            img{
+                height: 120px;
+            }
+
+            .proximo-partido__resultado{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .proximo-partido__puntos{
+                    font-size: 7rem;
+                    font-weight: 700;
+                    font-family: $fuente1;                    
+                }
+
+                .proximo-partido__temporizador{
+
+                    margin: 0 32px 40px 32px;
+
+                    .proximo-partido__etiqueta{
+                        background-color: red;
+                        padding: 4px 10px;
+                        border-radius: 4px;
+                        text-transform: uppercase;
+
+                        p{
+                            font-size: 2rem;
+                            font-weight: 700;
+                            font-family: $fuente1;  
+                            color: white;
+                            text-align: center;
+                        }
+                    }
+
+                    p{
+                        font-size: 2rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                    }
+                }
+            }
+        }
+    }
+}
