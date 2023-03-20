@@ -1,18 +1,20 @@
 .ultimosResultados{
     display: flex;
-    margin-top: 100px;
+    margin-top: 300px;
     align-items: center;
-    background-color: #F6F6F6;    
+    background-color: #ECECEC;   
+    
    
    
    
 
     .ultimosResultados__col-l{
-        padding-left: 5%;
+        padding-left: 10%;
     
         h2{
             margin-bottom: 50px;
             text-align: center;
+            
         }
 
         .ultimosResultados__col-l__contenedor{
@@ -24,9 +26,9 @@
             .ultimosResultados__col-l__cards{
                 
                 margin-right: 22px;
-                background-color: #D9D9D9;
+                background-color: white;
                 width: 400px;
-                height: 274px;
+                height: 320px;
                 text-align: center;
                 padding-top: 40px;
                 margin-bottom: 50px;
@@ -47,9 +49,19 @@
                     
 
                     .ultimosResultados__col-l__cards__equipo{
-                        img{
-                            width: 84px;
+
+                        .img-equipo-ur{
+                            height: 100px;
+                            margin-bottom: 10px;
+                            display: flex;
+                            justify-content: center;
                         }
+                       
+
+                        img{
+                            height: 84px;
+                        }
+
                         .ultimosResultados__col-l__cards__textos{
                             text-align: center;
                             p:nth-child(1){
@@ -65,6 +77,7 @@
                             }
                         }
                     }
+
                 }
 
             }
@@ -73,6 +86,7 @@
                 font-size: 2.0rem;
                 font-weight: 700;
                 font-family: $fuente1;
+                margin-top: -100px;
             }
         }
         
@@ -83,5 +97,36 @@
             @include botonPrincipal
             }
         }
+    }
+
+    .ultimosResultados__col-r{
+        img{
+            width: 100%;
+            margin-top: -120px;
+        }
+    }
+}
+
+@media (max-width: 1440px){
+    .ultimosResultados{
+        margin-top: 200px;
+        .ultimosResultados__col-l{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+       
+        .ultimosResultados__col-r{
+            img{
+                width: 100%;
+                margin-top: 0;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .ultimosResultados{
+        display: none;
     }
 }

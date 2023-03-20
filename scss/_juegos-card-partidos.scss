@@ -1,6 +1,6 @@
 .card-partidos{
 
-    padding: 0 5%;
+    padding: 0 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -19,8 +19,10 @@
 
 
         .card-partidos__contenedor__equipos{
-            display: flex;
+            display: grid;
+            grid-template-columns: 40% 20% 40%;
             padding-bottom: 10px;
+            justify-content: center;
             
             .equipo-col-izq{
                 display: grid;
@@ -28,13 +30,21 @@
                 grid-template-columns: 3fr;
                 justify-items: center;
 
+                .equipo-cards-img{
+                    height: 100px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                }
+
                 img{
-                    width: 80%;
-                    margin-bottom: 26px;
+                    height: 84px;
                 }
                 h3{
                     margin-bottom: 10px;
                     text-align: center;
+                    text-transform: uppercase;
                 }
                 p{
                     font-size: 1.8rem;
@@ -62,17 +72,24 @@
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-columns: 3fr;
-                justify-items: center;
+                justify-content: center;
+
+                .equipo-cards-img{
+                    height: 100px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                }
 
                 img{
-                    width: 80%;
-                    padding: 0;
-                    margin-bottom: 26px;
-                    
+                    height: 84px;
                 }
+
                 h3{
                     margin-bottom: 10px;
                     text-align: center;
+                    text-transform: uppercase;
                 }
                 p{
                     font-size: 1.8rem;
@@ -94,9 +111,136 @@
                 font-size: 1.6rem;
                 font-weight: 700;
                 font-family: $fuente2;
-                color: $colorPrincipal;
+                color: black;
+                text-transform: uppercase;
             }
 
         }
     }
+}
+
+@media screen and (max-width: 500px) {
+    .card-partidos{
+
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 100px;
+        
+        
+        
+    
+        .card-partidos__contenedor{
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 80% 20%;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            justify-content: center;
+    
+    
+            .card-partidos__contenedor__equipos{
+                display: grid;
+                grid-template-columns: 40% 20% 40%;
+                padding-bottom: 10px;
+                justify-content: center;
+                
+                .equipo-col-izq{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-columns: 3fr;
+                    justify-items: center;
+    
+                    .equipo-cards-img{
+                        height: 60px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                    }
+    
+                    img{
+                        height: 64px;
+                    }
+                    h3{
+                        margin-bottom: 10px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        font-family: $fuente1;
+                        text-align: center;
+                        color: black;
+                    }
+    
+                }
+    
+                .equipo-col-centro{
+                    
+                    p{
+                        margin-top: 60px;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                }
+    
+                .equipo-col-der{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-columns: 3fr;
+                    justify-content: center;
+    
+                    .equipo-cards-img{
+                        height: 64px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                    }
+    
+                    img{
+                        height: 64px;
+                    }
+    
+                    h3{
+                        margin-bottom: 10px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        font-family: $fuente1;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .card-partidos__contenedor__barraInferior{
+                display: flex;
+                justify-content: space-between;
+                border-top: solid #E3E3E3 1px;
+                padding: 20px 20px;
+    
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    font-family: $fuente2;
+                    color: black;
+                    text-transform: uppercase;
+                }
+    
+            }
+        }
+    }  
+    
 }

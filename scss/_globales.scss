@@ -1,7 +1,9 @@
 $fuente1: 'Bai Jamjuree', sans-serif;
 $fuente2: 'Mukta', sans-serif;
-$colorPrincipal: black;
-$colorSecundario: orange;
+$colorPrincipal: #A1412B;
+$colorSecundario: #F88D2A;
+$colorTexto: black;
+
 
 @mixin botonPrincipal {
     font-family: $fuente2;
@@ -13,18 +15,41 @@ $colorSecundario: orange;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    background-color: $colorSecundario;
+    text-align: center;
 }
+
+@mixin botonPrincipal-movil {
+    font-family: $fuente2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 8px 16px;
+    background-color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: $colorSecundario;
+    text-align: center;
+}
+
+.boton-principal-movil{
+    @include botonPrincipal-movil;
+}
+
 
 @mixin titulo-h1{
     font-family: $fuente1;
     font-weight: 700;
     font-size: 5.4rem;
+    text-transform: uppercase;
 }
 
 @mixin titulo-h2{
     font-family: $fuente1;
     font-weight: 700;
     font-size: 5rem;
+    text-transform: uppercase;
 }
 
 @mixin titulo-h3{
@@ -45,17 +70,19 @@ $colorSecundario: orange;
     font-size: 62.5%;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
-.titulo-Sección-h1{
+
+.titulo-Seccion-h1{
     @include titulo-h1;
 }
 
-.titulo-Sección-h3{
+.titulo-Seccion-h3{
     @include titulo-h3;
 }
 
-.titulo-Sección-h2{
+.titulo-Seccion-h2{
     @include titulo-h2;
 }
 
@@ -66,3 +93,95 @@ $colorSecundario: orange;
 .boton-principal{
     @include botonPrincipal;
 }
+
+
+
+@media (max-width: 1440px){
+   
+    @mixin titulo-h1{
+        font-size: 4.5rem;
+        
+    }
+    .titulo-Seccion-h1{
+        @include titulo-h2;
+    }
+   
+   
+    @mixin titulo-h2{
+        font-size: 4rem;
+        
+    }
+    .titulo-Seccion-h2{
+        @include titulo-h2;
+    }
+
+    @mixin titulo-h3{
+        font-size: 2rem;
+        
+    }
+    .titulo-Seccion-h3{
+        @include titulo-h3;
+    }
+}
+
+@media (max-width: 480px){
+   
+    @mixin titulo-h1{
+        font-size: 2rem;
+        
+    }
+    .titulo-Seccion-h1{
+        @include titulo-h2;
+    }
+   
+   
+    @mixin titulo-h2{
+        font-size: 1.8rem;
+        
+    }
+    .titulo-Seccion-h2{
+        @include titulo-h2;
+    }
+
+    @mixin titulo-h3{
+        font-size: 1.8rem;
+        
+    }
+    .titulo-Seccion-h3{
+        @include titulo-h3;
+    }
+
+    @mixin parrafos-base {
+        font-family: $fuente2;
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    .parrafos-base{
+        @include parrafos-base;
+    }
+
+    @mixin botonPrincipal {
+        font-family: $fuente2;
+        font-weight: 400;
+        font-size: 2rem;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        background-color: $colorSecundario;
+        text-align: center;
+    }
+
+    .boton-principal{
+        @include botonPrincipal;
+    }
+    
+ 
+
+
+    
+
+}
+

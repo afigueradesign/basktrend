@@ -1,57 +1,342 @@
 .ultimas-noticias-equipo{
-    padding: 0 5%;
+    padding: 0 10%;
     margin-top: 100px;
+    margin-bottom: 100px;
 
-    .titulo-Sección-h2{
+    .titulo-Seccion-h2{
         @include titulo-h2;
-        margin-bottom: 46px;
+        text-align: left;
+        margin-bottom: 60px;
     }
 
     .ultimas-noticias-equipo__contenedor{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: 100%;      
+        grid-template-rows: 100%;
+        
 
         .ultimas-noticias-equipo__contenedor__cards{
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
+            
             height: 234px;
             margin-right: 20px;
             padding: 18px;
-            background-color: cadetblue;
-            
-            p{
-                text-align: left;
-            }
-            .ultimas-noticias-equipo__contenedor__cards__etiqueta-fehca{
-                background-color: red;
-                font-size: 1.4rem;
-                font-weight: 700;
-                font-family: $fuente1;
-                color: white;
-                width: 63px;
-                padding: 10px;
-                margin-bottom: 10px;
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+           
+    
+                
+                    p{
+                        text-align: left;
+                    }
+                    .ultimas-noticias-equipo__contenedor__cards__etiqueta-fehca{
+                        background-color: red;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        color: white;
+                        width: 63px;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                    }
+        
+                    .ultimas-noticias-equipo__contenedor__cards__titulo-grande{
+                        font-size: 2.6rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        color: white;
+                    }
+        
+                    .ultimas-noticias-equipo__contenedor__cards__titulo-pequeño{
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        color: white;
+                        
+                    } 
+                
 
-            .ultimas-noticias-equipo__contenedor__cards__titulo-grande{
-                font-size: 2.6rem;
-                font-weight: 700;
-                font-family: $fuente1;
-            }
-
-            .ultimas-noticias-equipo__contenedor__cards__titulo-pequeño{
-                font-size: 1.6rem;
-                font-weight: 700;
-                font-family: $fuente1;
-            }      
         }
 
-    }
+        .ultimas-noticias-equipo__contenedor__cards:nth-child(1){
+            background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/los-angeles-lakers-v-boston-celtics.jpg);
+            background-size: cover;
+            height: 260px;
+            
+        }
+        .ultimas-noticias-equipo__contenedor__cards:nth-child(2){
+            background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/16759178292317.jpg?w=1024);
+            background-size: cover;
+            height: 260px;
+            
+        }
+        .ultimas-noticias-equipo__contenedor__cards:nth-child(3){
+            background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/david-herido.jpg?w=1024);
+            background-size: cover;
+            height: 260px;
+            margin-right: 0;
+            
+        }
+                
+    }   
+           
+            
+    .ultimas-noticias__boton{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
 
-    .ultimas-noticias-equipo__contenedor__cards:nth-child(3){
-        margin-right: 0;
+        .boton-principal{
+            @include botonPrincipal;
+        }
+        
     }
-   
+}
+
+@media screen and (max-width: 400px){
+
+    .ultimas-noticias-equipo{
+        padding: 0 10%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    
+        .titulo-Seccion-h2{
+           font-size: 18px;
+        }
+    
+        .ultimas-noticias-equipo__contenedor{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 100%;
+            
+    
+            .ultimas-noticias-equipo__contenedor__cards{
+                
+                height: 234px;
+                margin-right: 20px;
+                padding: 18px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+               
+        
+                    
+                        p{
+                            text-align: left;
+                        }
+                        .ultimas-noticias-equipo__contenedor__cards__etiqueta-fehca{
+                            background-color: red;
+                            font-size: 1.4rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                            width: 63px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+            
+                        .ultimas-noticias-equipo__contenedor__cards__titulo-grande{
+                            font-size: 2.6rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                        }
+            
+                        .ultimas-noticias-equipo__contenedor__cards__titulo-pequeño{
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                            
+                        } 
+                    
+    
+            }
+    
+            .ultimas-noticias-equipo__contenedor__cards:nth-child(1){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/los-angeles-lakers-v-boston-celtics.jpg);
+                background-size: cover;
+                height: 260px;
+                
+            }
+            .ultimas-noticias-equipo__contenedor__cards:nth-child(2){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/16759178292317.jpg?w=1024);
+                background-size: cover;
+                height: 260px;
+                
+            }
+            .ultimas-noticias-equipo__contenedor__cards:nth-child(3){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/david-herido.jpg?w=1024);
+                background-size: cover;
+                height: 260px;
+                margin-right: 0;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ultimas-noticias-equipo{
+        padding: 0 10%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    
+        .titulo-Seccion-h2{
+            @include titulo-h2;
+            text-align: left;
+            margin-bottom: 60px;
+        }
+    
+        .ultimas-noticias-equipo__contenedor{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 100%;
+            
+    
+            .ultimas-noticias-equipo__contenedor__cards{
+                
+                height: 234px;
+                margin-right: 20px;
+                padding: 18px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+               
+        
+                    
+                        p{
+                            text-align: left;
+                        }
+                        .ultimas-noticias-equipo__contenedor__cards__etiqueta-fehca{
+                            background-color: red;
+                            font-size: 1.4rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                            width: 63px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+            
+                        .ultimas-noticias-equipo__contenedor__cards__titulo-grande{
+                            font-size: 2.6rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                        }
+            
+                        .ultimas-noticias-equipo__contenedor__cards__titulo-pequeño{
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                            
+                        } 
+                    
+    
+            }
+    
+            .ultimas-noticias-equipo__contenedor__cards:nth-child(1){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/los-angeles-lakers-v-boston-celtics.jpg);
+                background-size: cover;
+                height: 260px;
+                
+            }
+            .ultimas-noticias-equipo__contenedor__cards:nth-child(2){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/16759178292317.jpg?w=1024);
+                background-size: cover;
+                height: 260px;
+                
+            }
+            .ultimas-noticias-equipo__contenedor__cards:nth-child(3){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://hibriddomo.files.wordpress.com/2023/03/david-herido.jpg?w=1024);
+                background-size: cover;
+                height: 260px;
+                margin-right: 0;
+                
+            }
+                    
+        }   
+               
+                
+        .ultimas-noticias__boton{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+    
+            .boton-principal{
+                @include botonPrincipal;
+            }
+            
+        }
+    }
+    
+    @media screen and (max-width: 500px){
+    
+        .ultimas-noticias-equipo{
+            padding: 0 10%;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        
+            .titulo-Seccion-h2{
+               font-size: 18px;
+               margin-bottom: 0;
+               text-align: center;
+            }
+        
+            .ultimas-noticias-equipo__contenedor{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                
+        
+                .ultimas-noticias-equipo__contenedor__cards{
+                    
+                    height: 234px;
+                    margin-right: 0;
+                    margin-top: 40px;
+                    padding: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                   
+            
+                        
+                            p{
+                                text-align: left;
+                            }
+                            .ultimas-noticias-equipo__contenedor__cards__etiqueta-fehca{
+                                background-color: red;
+                                font-size: 1.4rem;
+                                font-weight: 700;
+                                font-family: $fuente1;
+                                color: white;
+                                width: 63px;
+                                padding: 10px;
+                                margin-bottom: 10px;
+                            }
+                
+                            .ultimas-noticias-equipo__contenedor__cards__titulo-grande{
+                                font-size: 2rem;
+                                font-weight: 700;
+                                font-family: $fuente1;
+                                color: white;
+                            }
+                
+                            .ultimas-noticias-equipo__contenedor__cards__titulo-pequeño{
+                                font-size: 2rem;
+                                font-weight: 700;
+                                font-family: $fuente1;
+                                color: white;
+                                
+                            } 
+                        
+        
+                }
+        
+            }
+        }
+    }
+    
 }

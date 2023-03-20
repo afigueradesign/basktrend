@@ -1,8 +1,8 @@
 .tienda-oficial{
     margin-top: 100px;
-    padding: 0 5%;
+    padding: 0 10%;
 
-    .titulo-Sección-h2{
+    .titulo-Seccion-h2{
         text-align: center;
         margin-bottom: 40px;
 
@@ -11,27 +11,96 @@
 
     .tienda-oficial__contenedor{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        justify-content: space-between;
+        grid-template-columns: repeat(4, 295px);
+        grid-template-rows: 2fr;
+        justify-content: space-evenly;
 
         .tienda-oficial__cards{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 2fr;
             justify-items: center;
-
-            a{
-                margin-bottom: 20px;
+            
+            
+            .tienda-oficial__img{
+                border: 2px solid $colorPrincipal;
+                border-radius: 10px;
+                padding: 20px;
+                
+                a{
+                    margin-bottom: 20px;
+                    
+                    img{
+                        width: 230px;
+                    }
+                }
             }
 
             p{
                 font-size: 2rem;
                 font-weight: 700;
                 font-family: $fuente1;
+                text-transform: uppercase;
+                margin-top: 30px;
             }
         }
 
 
     }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .tienda-oficial{
+        margin-top: 100px;
+        padding: 0 10%;
+    
+        .titulo-Seccion-h2{
+            text-align: center;
+            margin-bottom: 40px;
+    
+            
+        }
+    
+        .tienda-oficial__contenedor{
+            display: grid;
+            grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr)) ;
+            grid-row: auto;
+    
+    
+            .tienda-oficial__cards{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr;
+                justify-items: center;
+                margin-bottom: 40px;
+                
+                
+                .tienda-oficial__img{
+                    border: 2px solid $colorPrincipal;
+                    border-radius: 10px;
+                    padding: 20px;
+                    
+                    a{
+                        margin-bottom: 20px;
+                        
+                        img{
+                            width: 230px;
+                        }
+                    }
+                }
+    
+                p{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    font-family: $fuente1;
+                    text-transform: uppercase;
+                    margin-top: 30px;
+                }
+            }
+    
+    
+        }
+    }
+
 }

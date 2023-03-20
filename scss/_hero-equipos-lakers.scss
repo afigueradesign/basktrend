@@ -1,13 +1,34 @@
 .equipo__contenido-principal{
     .hero-equipos{
-        background-color: aqua;
+        background-image: url(https://hibriddomo.files.wordpress.com/2023/03/banner-equipos.jpg);
+        background-repeat: no-repeat;
         height: 400px;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        background-position: center;
 
         .hero-equipos__titulo-Equipo{
             margin-bottom: 40px;
         }
     }
+}
+
+@media screen and (max-width: 500px) {
+    .equipo__contenido-principal{
+        .hero-equipos{
+            
+            background-repeat: no-repeat;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+
+    
+            .hero-equipos__titulo-Equipo{
+                margin-bottom: 40px;
+            }
+        }
+    }
+    
 }

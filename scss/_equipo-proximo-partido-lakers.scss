@@ -1,15 +1,19 @@
 .equipo-contenedor{
 
     .proximo-partido{
-        background-color: gainsboro;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
         margin-left: 20px;
         padding: 56px;
         margin-bottom: 80px;
+       
 
         .proximo-partido__contenedor{
             display: grid;
             grid-template-columns: 20% 60% 20%;
             grid-template-rows: 1fr;
+            
 
             img{
                 height: 120px;
@@ -35,6 +39,7 @@
                         padding: 4px 10px;
                         border-radius: 4px;
                         text-transform: uppercase;
+                        margin-bottom: 10px;
 
                         p{
                             font-size: 2rem;
@@ -53,5 +58,126 @@
                 }
             }
         }
+
+        .proximo-partido__botones__contenedor{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+            .proximo-partido__botones{
+                border-radius: 10px;
+                border: black solid 1px;
+                font-family: $fuente2;
+                font-weight: 400;
+                font-size: 2rem;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+                text-align: center;
+                margin-left: 18px;
+            }
+
+            .proximo-partido__botones:nth-child(1){
+                margin-left: 0;
+            }
+        }
     }
+}
+
+@media screen and (max-width:500px) {
+    .equipo-contenedor{
+        width: 300px;
+
+        .proximo-partido{
+            background: #FFFFFF;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-left: 0;
+            padding: 20px;
+            margin-bottom: 80px;
+           
+    
+            .proximo-partido__contenedor{
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(3, 100px);
+                grid-template-rows: 120px;
+                justify-items: center;                
+                
+                img{
+                    height: 50px;
+                }
+    
+                .proximo-partido__resultado{
+                    display:grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: auto;
+                    width: 300px;
+                    justify-items: center;
+                    margin-top: 40px;
+    
+                    .proximo-partido__puntos{
+                        font-size: 4rem;
+                        font-weight: 700;
+                        font-family: $fuente1; 
+                                        
+                    }
+    
+                    .proximo-partido__temporizador{
+    
+                        margin: 0 22px 40px 22px;
+    
+                        .proximo-partido__etiqueta{
+                            background-color: red;
+                            padding: 4px 10px;
+                            border-radius: 4px;
+                            text-transform: uppercase;
+                            margin-bottom: 10px;
+    
+                            p{
+                                font-size: 1.2rem;
+                                font-weight: 700;
+                                font-family: $fuente1;  
+                                color: white;
+                                text-align: center;
+                            }
+                        }
+    
+                        p{
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+    
+            .proximo-partido__botones__contenedor{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+    
+                .proximo-partido__botones{
+                    border-radius: 10px;
+                    border: black solid 1px;
+                    font-family: $fuente2;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-left: 18px;
+                }
+    
+                .proximo-partido__botones:nth-child(1){
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    
 }

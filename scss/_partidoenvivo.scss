@@ -21,26 +21,27 @@
         grid-template-rows: 1fr;
         z-index: 1;
         margin-top: -280px;
+        padding: 0 10%;
 
         .nombreDeCiudad{
             font-size: 2rem;
             font-family: $fuente1;
             font-weight: 300;
-            color: $colorPrincipal;
+            color: black;
             margin-bottom: 5px;
         }
         .nombreDeEquipo{
             font-size: 3rem;
             font-family: $fuente1;
             font-weight: 700;
-            color: $colorPrincipal;
+            color: black;
             margin: 0 0 14px 0;
         }
         .estadisticasEquipo{
             font-size: 1.8rem;
             font-family: $fuente1;
             font-weight: 300;
-            color: $colorPrincipal;
+            color: black;
             margin: 0;
         }
        
@@ -124,4 +125,87 @@
         }
 
     }
+}
+
+@media (max-width: 480px) {
+
+    .partidoEnVivo {
+        height: 170px;
+    
+        .partidoEnVivo__textoFondo {
+            z-index: 1;
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 9.8rem;
+            font-family: $fuente1;
+            font-weight: 700;
+            -webkit-text-stroke: 1px #E6E6E6;
+            color: transparent;
+        }
+    
+        .partidoEnVivo__contenedor {
+            display: grid;
+            grid-template-columns:32% 36% 32%;
+            grid-template-rows: 1fr;
+            z-index: 2;
+            margin-top: -120px;
+            padding: 0 10%;
+    
+            .nombreDeCiudad{
+                display: none;
+            }
+            .nombreDeEquipo{
+               display: none;
+            }
+            .estadisticasEquipo{
+                display: none;
+            }
+           
+    
+            .equiposEnVivo01 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                
+                img {
+                    height: 64px;   
+                }
+    
+                .equipo__textos{
+                    display: flex;
+                    justify-content: flex-end;
+                }    
+            }
+    
+            .equiposEnVivo02 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                
+                img {
+                    height: 64px;
+                }
+    
+                .equipo__textos{
+                    display: flex;
+                    justify-content: flex-start;   
+                }    
+            }
+    
+            .partidoEnVivo__horarios{
+                display: flex;
+                justify-content: center;
+                margin-top: 5%;
+                font-size: 2.2rem;
+                font-weight: 700;
+                font-family: $fuente1;
+            }
+        }
+    }
+    
+    .OtrosPartidosEnVivo{
+        display: none;
+        
+    }
+
 }

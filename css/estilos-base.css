@@ -1,20 +1,42 @@
 @charset "UTF-8";
+.boton-principal-movil {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 8px 16px;
+  background-color: black;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #F88D2A;
+  text-align: center;
+}
+
 * {
   font-size: 62.5%;
   margin: 0;
   box-sizing: border-box;
 }
 
-.titulo-Sección-h3 {
+.titulo-Seccion-h1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 5.4rem;
+  text-transform: uppercase;
+}
+
+.titulo-Seccion-h3 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 3rem;
 }
 
-.titulo-Sección-h2 {
+.titulo-Seccion-h2 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 5rem;
+  text-transform: uppercase;
 }
 
 .parrafos-base {
@@ -23,68 +45,205 @@
   font-size: 1.6rem;
 }
 
+.boton-principal {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 18px 56px;
+  background-color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #F88D2A;
+  text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .titulo-Seccion-h1 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+  .titulo-Seccion-h2 {
+    font-size: 4rem;
+  }
+  .titulo-Seccion-h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .titulo-Seccion-h1 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+  .titulo-Seccion-h2 {
+    font-size: 1.8rem;
+  }
+  .titulo-Seccion-h3 {
+    font-size: 1.8rem;
+  }
+  .parrafos-base {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  .boton-principal {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #F88D2A;
+    text-align: center;
+  }
+}
 .header__contenedor {
   display: flex;
-  height: 100px;
-  padding: 0 5%;
+  height: 120px;
+  padding: 0 10%;
   justify-content: space-between;
   align-items: center;
 }
 .header__contenedor .header__logo {
-  font-size: 4rem;
+  height: 100px;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   margin: 0;
 }
-.header__contenedor .header__menuNavegacion {
+.header__contenedor .menu-hamburguesa-abrir {
+  display: none;
+}
+.header__contenedor .nav {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 1fr;
+}
+.header__contenedor .nav .menu-hamburguesa-cerrar {
+  display: none;
+}
+.header__contenedor .nav .header__menuNavegacion {
   display: flex;
 }
-.header__contenedor .header__menuNavegacion li {
+.header__contenedor .nav .header__menuNavegacion li {
   list-style: none;
 }
-.header__contenedor .header__menuNavegacion li a {
+.header__contenedor .nav .header__menuNavegacion li a {
   font-size: 1.8rem;
   font-weight: 700;
   font-family: "Mukta", sans-serif;
   padding-right: 16px;
   text-decoration: none;
-  color: black;
+  color: #A1412B;
+  text-transform: uppercase;
 }
-.header__contenedor .header__menuNavegacion li a:hover {
-  color: orange;
+.header__contenedor .nav .header__menuNavegacion li a:hover {
+  color: #F88D2A;
 }
-.header__contenedor .header__menuRegistro {
+.header__contenedor .nav .header__menuRegistro {
   display: flex;
   align-items: center;
 }
-.header__contenedor .header__menuRegistro li {
+.header__contenedor .nav .header__menuRegistro li {
   list-style: none;
 }
-.header__contenedor .header__menuRegistro li a {
+.header__contenedor .nav .header__menuRegistro li a {
   font-size: 1.8rem;
   font-weight: 700;
   font-family: "Mukta", sans-serif;
   padding-right: 16px;
   text-decoration: none;
-  color: black;
+  color: #A1412B;
 }
-.header__contenedor .header__menuRegistro li a:hover {
-  color: orange;
+.header__contenedor .nav .header__menuRegistro li a:hover {
+  color: #F88D2A;
 }
-.header__contenedor .header__menuRegistro span {
-  border-right: 2px solid black;
+.header__contenedor .nav .header__menuRegistro span {
+  border-right: 2px solid #A1412B;
   height: 24px;
   margin-right: 15px;
 }
-.header__contenedor .header__menuRegistro span :hover {
-  color: orange;
+.header__contenedor .nav .header__menuRegistro span :hover {
+  color: #F88D2A;
 }
 
+@media screen and (max-width: 900px) {
+  .header__contenedor {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 120px;
+    height: 120px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .header__contenedor .menu-hamburguesa-abrir {
+    display: block;
+    font-size: 4.5rem;
+    background-color: transparent;
+    border: none;
+    color: #F88D2A;
+  }
+  .header__contenedor .nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: #F88D2A;
+    padding: 2rem;
+  }
+  .header__contenedor .nav .menu-hamburguesa-cerrar {
+    display: block;
+    font-size: 4.5rem;
+    background-color: transparent;
+    border: none;
+    color: #A1412B;
+    margin-bottom: 5rem;
+  }
+  .header__contenedor .nav .header__menuNavegacion {
+    flex-direction: column;
+    align-items: end;
+  }
+  .header__contenedor .nav .header__menuNavegacion li a {
+    color: white;
+  }
+  .header__contenedor .nav .header__menuRegistro {
+    flex-direction: column;
+    align-items: end;
+    margin-top: 2rem;
+  }
+  .header__contenedor .nav .header__menuRegistro li a {
+    color: white;
+  }
+  .header__contenedor .nav .header__menuRegistro span {
+    border-right: 0;
+    border-top: 2px solid #A1412B;
+    width: 160px;
+    margin-top: 15px;
+  }
+  .header__contenedor .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .hero-container {
   display: flex;
   align-items: center;
-  background-color: #F6F6F6;
-  height: 700px;
+  height: 800px;
+  background-image: url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/home%20banner%20hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -40px;
 }
 .hero-container .hero-textos {
   padding: 0 5%;
@@ -94,6 +253,7 @@
   font-size: 5.2rem;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
+  color: white;
 }
 .hero-container .hero-textos p {
   margin-top: 38px;
@@ -101,6 +261,7 @@
   font-family: "Mukta", sans-serif;
   font-weight: 400;
   margin-bottom: 58px;
+  color: white;
 }
 .hero-container .hero-textos a {
   font-family: "Mukta", sans-serif;
@@ -112,11 +273,54 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  background-color: #F88D2A;
+  text-align: center;
 }
 .hero-container .hero-img-prvisional {
   height: 700px;
 }
 
+@media (max-width: 1440px) {
+  .hero-container {
+    background-size: none;
+    background-position-y: -40px;
+    background-position-x: -350px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-container {
+    background-position-y: 0;
+    background-position-x: center;
+    height: 220px;
+    width: 100%;
+  }
+  .hero-container .hero-textos {
+    padding: 0 5%;
+    width: 45%;
+  }
+  .hero-container .hero-textos h1 {
+    font-size: 1.8rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .hero-container .hero-textos p {
+    display: none;
+  }
+  .hero-container .hero-textos a {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #F88D2A;
+    text-align: center;
+  }
+}
 .partidoEnVivo {
   padding: 0 5%;
   height: 412px;
@@ -139,6 +343,7 @@
   grid-template-rows: 1fr;
   z-index: 1;
   margin-top: -280px;
+  padding: 0 10%;
 }
 .partidoEnVivo .partidoEnVivo__contenedor .nombreDeCiudad {
   font-size: 2rem;
@@ -226,14 +431,82 @@
   margin: 0;
 }
 
+@media (max-width: 480px) {
+  .partidoEnVivo {
+    height: 170px;
+  }
+  .partidoEnVivo .partidoEnVivo__textoFondo {
+    z-index: 1;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9.8rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #E6E6E6;
+    color: transparent;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor {
+    display: grid;
+    grid-template-columns: 32% 36% 32%;
+    grid-template-rows: 1fr;
+    z-index: 2;
+    margin-top: -120px;
+    padding: 0 10%;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .nombreDeCiudad {
+    display: none;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .nombreDeEquipo {
+    display: none;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .estadisticasEquipo {
+    display: none;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo01 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo01 img {
+    height: 64px;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo01 .equipo__textos {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo02 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo02 img {
+    height: 64px;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .equiposEnVivo02 .equipo__textos {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .partidoEnVivo .partidoEnVivo__contenedor .partidoEnVivo__horarios {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+  .OtrosPartidosEnVivo {
+    display: none;
+  }
+}
 .home-bt-Pass {
-  padding: 0 5%;
+  padding: 0 10%;
   margin-top: 100px;
 }
-.home-bt-Pass .titulo-Sección-h2 {
+.home-bt-Pass .titulo-Seccion-h2 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 5rem;
+  text-transform: uppercase;
   text-align: center;
 }
 .home-bt-Pass .home-bt-Pass__contenedor {
@@ -244,7 +517,7 @@
 .home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos {
   width: 35%;
 }
-.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos .titulo-Sección-h3 {
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos .titulo-Seccion-h3 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -261,18 +534,21 @@
   display: flex;
   justify-content: center;
 }
+.home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__img img {
+  width: 100%;
+}
 
 .home-fortalezas {
   margin-top: 100px;
-  padding: 0 5%;
+  padding: 0 10%;
 }
 .home-fortalezas h2 {
   font-size: 14rem;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
-  color: #F0F0F0;
+  color: black;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .home-fortalezas .home-fortalezas__contenedor {
   display: grid;
@@ -300,12 +576,17 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  background-color: #F88D2A;
+  text-align: center;
 }
 .home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido :nth-child(1) {
   margin-top: 88px;
 }
 .home-fortalezas .col-c {
   grid-area: col-c;
+}
+.home-fortalezas .col-c img {
+  height: 880px;
 }
 .home-fortalezas .col-r {
   grid-area: col-r;
@@ -318,28 +599,135 @@
   margin-bottom: 40px;
 }
 
-.prueba h2 {
-  font-size: 24px;
+/* responsive movil */
+@media (max-width: 480px) {
+  .home-bt-Pass {
+    padding: 0 10%;
+    margin-top: 20px;
+  }
+  .home-bt-Pass .titulo-Seccion-h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .home-bt-Pass .home-bt-Pass__contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos {
+    width: 100%;
+  }
+  .home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos .titulo-Seccion-h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__textos p {
+    font-size: 1.4rem;
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    padding: 0 15%;
+  }
+  .home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__img {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .home-bt-Pass .home-bt-Pass__contenedor .home-bt-Pass__img img {
+    width: 100%;
+  }
+  .home-fortalezas {
+    margin-top: 100px;
+    padding: 0 10%;
+  }
+  .home-fortalezas h2 {
+    font-size: 3rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .home-fortalezas .home-fortalezas__contenedor {
+    display: flex;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-l {
+    padding-right: 0;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido h3:nth-child(1) {
+    margin-top: 10px;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido p {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido .boton-principal-movil {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 8px 16px;
+    background-color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #F88D2A;
+    text-align: center;
+    margin: 0 30%;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-l .col-l-contenido:nth-child(2) {
+    display: none;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-c {
+    display: none;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-r {
+    display: none;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-r .col-r-contenido h3 {
+    margin-bottom: 14px;
+  }
+  .home-fortalezas .home-fortalezas__contenedor .col-r .col-r-contenido p {
+    margin-bottom: 40px;
+  }
 }
-
 .pruebaAPP {
   display: flex;
   align-items: center;
-  padding: 0 5%;
+  padding: 0 10%;
   height: 600px;
-  background-color: #F6F6F6;
+  background-color: #F88D2A;
+  margin-top: 100px;
 }
 .pruebaAPP .pruebaAPP__col-l {
   padding-right: 5%;
   width: 40%;
 }
-.pruebaAPP .pruebaAPP__col-l .titulo-Sección-h3 {
+.pruebaAPP .pruebaAPP__col-l .titulo-Seccion-h3 {
   margin-bottom: 2.6rem;
+  color: white;
+}
+.pruebaAPP .pruebaAPP__col-l .parrafos-base {
+  color: white;
 }
 .pruebaAPP .pruebaAPP__col-r {
   width: 60%;
   display: flex;
   justify-content: center;
+}
+.pruebaAPP .pruebaAPP__col-r img {
+  width: 660px;
 }
 .pruebaAPP .pruebaAPP__col-l__logos-Store {
   display: flex;
@@ -352,64 +740,212 @@
   margin-right: 40px;
 }
 
+@media screen and (max-width: 440px) {
+  .pruebaAPP {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    height: 470px;
+    padding: 5% 10%;
+    justify-content: center;
+  }
+  .pruebaAPP .pruebaAPP__col-l {
+    padding: 0;
+    width: 100%;
+  }
+  .pruebaAPP .pruebaAPP__col-l .titulo-Seccion-h3 {
+    text-align: center;
+  }
+  .pruebaAPP .pruebaAPP__col-l .parrafos-base {
+    text-align: center;
+  }
+  .pruebaAPP .pruebaAPP__col-l .pruebaAPP__col-l__logos-Store {
+    justify-content: space-between;
+  }
+  .pruebaAPP .pruebaAPP__col-l .pruebaAPP__col-l__logos-Store img {
+    margin-top: 26px;
+    width: 140px;
+  }
+  .pruebaAPP .pruebaAPP__col-l .pruebaAPP__col-l__logos-Store :nth-child(1) {
+    margin-right: 0;
+  }
+  .pruebaAPP .pruebaAPP__col-r {
+    width: 100%;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .pruebaAPP .pruebaAPP__col-r img {
+    width: 320px;
+  }
+}
 .tienesElControl {
-  padding: 0 5%;
+  padding: 0 10%;
   margin-bottom: 100px;
 }
 .tienesElControl h2 {
   text-align: center;
   margin: 100px 0 70px 0;
+  text-transform: uppercase;
 }
 .tienesElControl .tienesElControl__cards-contenedor {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(312px, 400px));
+  grid-template-rows: 312px;
   justify-items: center;
   border-radius: 10px;
-  background-color: #F6F6F6;
-  padding: 20px 20px 40px 20px;
+  background-color: #F88D2A;
+  padding: 0;
 }
 .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards {
-  padding: 20px;
+  padding: 0px;
 }
-.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__img {
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 246px 70px;
   justify-items: center;
 }
-.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards img:nth-child(1) {
-  width: 100%;
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido .cards__img img {
+  height: 100%;
+  width: 360px;
+  border: solid white 8px;
+  border-radius: 10px;
+  background-color: white;
 }
-.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards img:nth-child(2) {
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido .cards__ico {
+  height: 80px;
+  width: 80px;
+  border: solid white 6px;
+  border-radius: 100%;
+  background-color: #A1412B;
   margin-top: -30px;
+  display: flex;
+  place-content: center center;
+  place-items: center center;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido .cards__ico img {
+  width: 50%;
+  height: 50%;
 }
 .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos {
   text-align: center;
 }
 .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos h3 {
   margin-bottom: 16px;
+  color: white;
+}
+.tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos .parrafos-base {
+  color: white;
 }
 
-.home-estadisticas h2 {
+@media (max-width: 1440px) {
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido .cards__img img {
+    width: 300px;
+    border: solid white 8px;
+    border-radius: 10px;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tienesElControl {
+    padding: 0 0;
+    margin-bottom: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .tienesElControl h2 {
+    text-align: center;
+    margin: 100px 0 40px 0;
+    text-transform: uppercase;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 450px;
+    justify-items: center;
+    border-radius: 10px;
+    background-color: #F88D2A;
+    padding: 30px 20px 30px 20px;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards {
+    width: 100%;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 246px 70px;
+    justify-items: center;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido .cards__img img {
+    height: 100%;
+    width: 300px;
+    border: solid white 8px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido .cards__ico {
+    height: 80px;
+    width: 80px;
+    border: solid white 6px;
+    border-radius: 100%;
+    background-color: #A1412B;
+    margin-top: -30px;
+    display: flex;
+    place-content: center center;
+    place-items: center center;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__contenido .cards__ico img {
+    width: 50%;
+    height: 50%;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos h3 {
+    margin-bottom: 16px;
+    color: white;
+  }
+  .tienesElControl .tienesElControl__cards-contenedor .cards-contenedor__cards .cards__textos .parrafos-base {
+    color: white;
+  }
+}
+.home-estadisticas {
+  padding: 0 10%;
+}
+.home-estadisticas .titulo-Seccion-h2 {
   text-align: center;
   margin-bottom: 70px;
+  text-transform: uppercase;
 }
 .home-estadisticas .home-estadisticas__contenedor {
   display: flex;
-  padding: 0 5%;
   justify-content: space-between;
   align-items: center;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__img {
+  background-color: #F88D2A;
+  background-position: cover;
+  width: 450px;
+  background-size: 70%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__img img {
+  width: 600px;
 }
 .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador {
   display: flex;
 }
 .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador .textos__numeroJugador {
-  font-size: 50px;
+  font-size: 5rem;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
-  background-color: #D9D9D9;
+  background-color: #F88D2A;
   padding: 10px;
+  color: white;
 }
 .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador .textos__nombreJugador {
   font-size: 40px;
@@ -435,6 +971,10 @@
   font-size: 3.4rem;
   font-weight: 700;
 }
+.home-estadisticas .home-estadisticas__contenedor .boton-EATA {
+  width: 280px;
+  margin-top: 50px;
+}
 .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor {
   display: flex;
   align-items: center;
@@ -444,8 +984,16 @@
   width: 300px;
   margin-bottom: 16px;
 }
-.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor img {
-  padding-right: 24px;
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor .contenedor-img-Otros_Jugadores {
+  background-color: #F88D2A;
+  width: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-right: 24px;
+}
+.home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor .contenedor-img-Otros_Jugadores img {
+  width: 130px;
 }
 .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores .otros-Jugadores_contenedor__nombreJugador p:nth-child(1) {
   font-size: 1.8rem;
@@ -458,14 +1006,90 @@
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+@media screen and (max-width: 400px) {
+  .home-estadisticas {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat minmax(auto-fit, 400px);
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  .home-estadisticas .titulo-Seccion-h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  .home-estadisticas .home-estadisticas__contenedor {
+    display: grid;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__img {
+    background-color: #F88D2A;
+    background-position: cover;
+    width: 150px;
+    background-size: 70%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__img img {
+    width: 250px;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador .textos__numeroJugador {
+    font-size: 2rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    background-color: #F88D2A;
+    padding: 10px;
+    color: white;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__Jugador .textos__nombreJugador {
+    font-size: 40px;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    margin-left: 18px;
+    margin-top: 10px;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__marcador {
+    display: flex;
+    justify-content: center;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__marcador .marcador-stats {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__marcador .marcador-stats .marcador-stats__texto01 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__textos .home-estadisticas__textos__marcador .marcador-stats .marcador-stats__texto02 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 3.4rem;
+    font-weight: 700;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .boton-EATA {
+    width: 280px;
+    margin: 30px auto;
+  }
+  .home-estadisticas .home-estadisticas__contenedor .home-estadisticas__otros-Jugadores {
+    display: none;
+  }
+}
 .ultimosResultados {
   display: flex;
-  margin-top: 100px;
+  margin-top: 300px;
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: #ECECEC;
 }
 .ultimosResultados .ultimosResultados__col-l {
-  padding-left: 5%;
+  padding-left: 10%;
 }
 .ultimosResultados .ultimosResultados__col-l h2 {
   margin-bottom: 50px;
@@ -476,9 +1100,9 @@
 }
 .ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards {
   margin-right: 22px;
-  background-color: #D9D9D9;
+  background-color: white;
   width: 400px;
-  height: 274px;
+  height: 320px;
   text-align: center;
   padding-top: 40px;
   margin-bottom: 50px;
@@ -494,8 +1118,14 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__contenedor .ultimosResultados__col-l__cards__equipo .img-equipo-ur {
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
 .ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__contenedor .ultimosResultados__col-l__cards__equipo img {
-  width: 84px;
+  height: 84px;
 }
 .ultimosResultados .ultimosResultados__col-l .ultimosResultados__col-l__contenedor .ultimosResultados__col-l__cards .ultimosResultados__col-l__cards__contenedor .ultimosResultados__col-l__cards__equipo .ultimosResultados__col-l__cards__textos {
   text-align: center;
@@ -515,6 +1145,7 @@
   font-size: 2rem;
   font-weight: 700;
   font-family: "Bai Jamjuree", sans-serif;
+  margin-top: -100px;
 }
 .ultimosResultados .ultimosResultados__col-l .ultimosResultados__boton {
   display: flex;
@@ -530,21 +1161,45 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  background-color: #F88D2A;
+  text-align: center;
+}
+.ultimosResultados .ultimosResultados__col-r img {
+  width: 100%;
+  margin-top: -120px;
 }
 
+@media (max-width: 1440px) {
+  .ultimosResultados {
+    margin-top: 200px;
+  }
+  .ultimosResultados .ultimosResultados__col-l {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .ultimosResultados .ultimosResultados__col-r img {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  .ultimosResultados {
+    display: none;
+  }
+}
 .tienda-oficial {
   margin-top: 100px;
-  padding: 0 5%;
+  padding: 0 10%;
 }
-.tienda-oficial .titulo-Sección-h2 {
+.tienda-oficial .titulo-Seccion-h2 {
   text-align: center;
   margin-bottom: 40px;
 }
 .tienda-oficial .tienda-oficial__contenedor {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  justify-content: space-between;
+  grid-template-columns: repeat(4, 295px);
+  grid-template-rows: 2fr;
+  justify-content: space-evenly;
 }
 .tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards {
   display: grid;
@@ -552,25 +1207,77 @@
   grid-template-rows: 2fr;
   justify-items: center;
 }
-.tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards a {
+.tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards .tienda-oficial__img {
+  border: 2px solid #A1412B;
+  border-radius: 10px;
+  padding: 20px;
+}
+.tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards .tienda-oficial__img a {
   margin-bottom: 20px;
+}
+.tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards .tienda-oficial__img a img {
+  width: 230px;
 }
 .tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards p {
   font-size: 2rem;
   font-weight: 700;
   font-family: "Bai Jamjuree", sans-serif;
+  text-transform: uppercase;
+  margin-top: 30px;
 }
 
-.ultimas-noticias {
-  padding: 0 5%;
-  margin-top: 100px;
+@media screen and (max-width: 400px) {
+  .tienda-oficial {
+    margin-top: 100px;
+    padding: 0 10%;
+  }
+  .tienda-oficial .titulo-Seccion-h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .tienda-oficial .tienda-oficial__contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row: auto;
+  }
+  .tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    justify-items: center;
+    margin-bottom: 40px;
+  }
+  .tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards .tienda-oficial__img {
+    border: 2px solid #A1412B;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards .tienda-oficial__img a {
+    margin-bottom: 20px;
+  }
+  .tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards .tienda-oficial__img a img {
+    width: 230px;
+  }
+  .tienda-oficial .tienda-oficial__contenedor .tienda-oficial__cards p {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
 }
-.ultimas-noticias .titulo-Sección-h2 {
+.ultimas-noticias {
+  padding: 0 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.ultimas-noticias .titulo-Seccion-h2 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 5rem;
-  text-align: center;
-  margin-bottom: 46px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 60px;
 }
 .ultimas-noticias .ultimas-noticias__contenedor {
   display: grid;
@@ -578,18 +1285,17 @@
   grid-template-rows: 100%;
 }
 .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
   height: 234px;
   margin-right: 20px;
   padding: 18px;
-  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
-.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards p {
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__textos p {
   text-align: left;
 }
-.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__contenedor__cards__etiqueta-fehca {
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__textos .ultimas-noticias__contenedor__cards__etiqueta-fehca {
   background-color: red;
   font-size: 1.4rem;
   font-weight: 700;
@@ -599,17 +1305,33 @@
   padding: 10px;
   margin-bottom: 10px;
 }
-.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__contenedor__cards__titulo-grande {
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__textos .ultimas-noticias__contenedor__cards__titulo-grande {
   font-size: 2.6rem;
   font-weight: 700;
   font-family: "Bai Jamjuree", sans-serif;
+  color: white;
 }
-.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__contenedor__cards__titulo-pequeño {
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__textos .ultimas-noticias__contenedor__cards__titulo-pequeño {
   font-size: 1.6rem;
   font-weight: 700;
   font-family: "Bai Jamjuree", sans-serif;
+  color: white;
 }
-.ultimas-noticias .ultimas-noticias__contenedor__cards:nth-child(3) {
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/comisionado-home-noticia.jpg);
+  background-size: cover;
+  height: 260px;
+}
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/kevin-noticia-home.jpg);
+  background-size: cover;
+  background-position-x: -60px;
+  height: 260px;
+}
+.ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/david-herido.jpeg);
+  background-size: cover;
+  height: 260px;
   margin-right: 0;
 }
 .ultimas-noticias .ultimas-noticias__boton {
@@ -627,47 +1349,133 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  background-color: #F88D2A;
+  text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  .ultimas-noticias {
+    padding: 0 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .ultimas-noticias .titulo-Seccion-h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards {
+    display: grid;
+    height: 234px;
+    margin-right: 0;
+    padding: 18px;
+    display: grid;
+    margin-bottom: 20px;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__textos p {
+    text-align: left;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__textos .ultimas-noticias__contenedor__cards__etiqueta-fehca {
+    background-color: red;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: white;
+    width: 63px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__textos .ultimas-noticias__contenedor__cards__titulo-grande {
+    font-size: 2.6rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: white;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards .ultimas-noticias__textos .ultimas-noticias__contenedor__cards__titulo-pequeño {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: white;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/comisionado-home-noticia.jpg);
+    background-size: cover;
+    height: 260px;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/kevin-noticia-home.jpg);
+    background-size: cover;
+    background-position-x: -60px;
+    height: 260px;
+  }
+  .ultimas-noticias .ultimas-noticias__contenedor .ultimas-noticias__contenedor__cards:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/david-herido.jpeg);
+    background-size: cover;
+    height: 260px;
+    margin-right: 0;
+  }
+  .ultimas-noticias .ultimas-noticias__boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .ultimas-noticias .ultimas-noticias__boton .boton-principal {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 18px 56px;
+    background-color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #F88D2A;
+    text-align: center;
+  }
+}
 .home-testimonios .home-testimonios__contenedor {
   display: flex;
-  background-color: #F6F6F6;
+  background-color: #F88D2A;
   height: 620px;
-  margin-top: 300px;
-  padding-right: 5%;
+  margin-top: 100px;
+  padding-right: 10%;
 }
-.home-testimonios .home-testimonios__contenedor img {
-  margin-top: -200px;
-  z-index: 2;
-  height: 820px;
+.home-testimonios .home-testimonios__contenedor .testimonios__img {
+  background-image: url("https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/img%20testimonio.png");
+  height: 720px;
+  width: 100%;
+  background-size: cover;
+  margin-top: -100px;
 }
 .home-testimonios .home-testimonios__contenedor .home-testimonios__textos {
-  padding-left: 120px;
+  margin-top: 8%;
+  margin-left: 60px;
 }
 .home-testimonios .home-testimonios__contenedor .home-testimonios__textos h2 {
   font-family: "Bai Jamjuree", sans-serif;
-  font-size: 12rem;
+  font-size: 5rem;
   font-weight: 700;
   color: #F0F0F0;
-  text-align: center;
-}
-.home-testimonios .home-testimonios__contenedor .home-testimonios__textos .home-testimonios__comillas {
-  font-family: "Mukta", sans-serif;
-  font-size: 8rem;
-  font-weight: 400;
+  text-align: left;
 }
 .home-testimonios .home-testimonios__contenedor .home-testimonios__textos .home-testimonios__lista-de-testimonios {
   font-family: "Mukta", sans-serif;
   font-size: 2.8rem;
   font-weight: 400;
   padding-right: 60px;
-  margin: 0;
+  margin-top: 60px;
+  color: #F0F0F0;
 }
 .home-testimonios .home-testimonios__contenedor .home-testimonios__textos .home-testimonios__persona {
   font-family: "Mukta", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   margin-top: 24px;
+  color: #F0F0F0;
 }
 .home-testimonios .home-testimonios__contenedor .home-testimonios__navegacion {
   display: flex;
@@ -678,23 +1486,46 @@
   padding-bottom: 80px;
 }
 .home-testimonios .home-testimonios__contenedor .home-testimonios__navegacion .home-testimonios__navegacion__puntos {
-  border: solid 2px #8f8f8f;
+  border: solid 2px #A1412B;
   border-radius: 100%;
   width: 16px;
   height: 16px;
   margin-top: 10px;
 }
+.home-testimonios .home-testimonios__contenedor .home-testimonios__navegacion .home-testimonios__navegacion__puntos:nth-child(1) {
+  background-color: #A1412B;
+}
 .home-testimonios .home-testimonios__contenedor .home-testimonios__navegacion :hover {
   background-color: #8f8f8f;
 }
 
+@media (max-width: 1440px) {
+  .home-testimonios .home-testimonios__contenedor {
+    display: flex;
+    background-color: #F88D2A;
+    height: 620px;
+    margin-top: 100px;
+    padding-right: 10%;
+  }
+  .home-testimonios .home-testimonios__contenedor .testimonios__img {
+    background-image: url("https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/img%20testimonio.png");
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    margin-top: -80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home-testimonios {
+    display: none;
+  }
+}
 footer {
-  margin-top: 100px;
-  padding: 34px 5%;
-  height: 280px;
-  background-color: #979797;
+  padding: 34px 10%;
+  height: 320px;
+  background-color: #A1412B;
   display: grid;
-  grid-template-columns: 35% 15% 20% 30%;
+  grid-template-columns: 25% 20% 25% 30%;
   grid-template-rows: 1fr;
   text-transform: uppercase;
 }
@@ -703,21 +1534,24 @@ footer .footer__titulo {
   font-weight: 700;
   font-family: "Mukta", sans-serif;
   margin-bottom: 20px;
+  color: white;
 }
 footer .footer__col1 {
-  width: 80%;
+  width: 70%;
 }
 footer .footer__col1 .footer__logo {
   font-size: 3.4rem;
   font-weight: 700;
   font-family: "Bai Jamjuree", sans-serif;
   margin-bottom: 30px;
+  color: white;
 }
 footer .footer__col1 p {
   font-size: 1.4rem;
   font-weight: 700;
   font-family: "Mukta", sans-serif;
   margin-bottom: 14px;
+  color: white;
 }
 footer .footer__col1 .footer__copy {
   font-size: 1.4rem;
@@ -748,7 +1582,7 @@ footer .footer__col3 .footer__col3_contenedor {
 }
 footer .footer__col3 .footer__col3_contenedor i {
   font-size: 20px;
-  color: black;
+  color: white;
 }
 footer .footer__col3 .footer__col3_contenedor a {
   font-size: 1.4rem;
@@ -765,6 +1599,8 @@ footer .footer__col4 .footer__boton-suscribirte {
 footer .footer__col4 .footer__boton-suscribirte .boton-suscribirte__email {
   width: 296px;
   height: 40px;
+  background-color: white;
+  padding-left: 10px;
   font-size: 1.4rem;
   font-weight: 400;
   font-family: "Mukta", sans-serif;
@@ -777,8 +1613,9 @@ footer .footer__col4 .footer__boton-suscribirte .boton-suscribirte__boton {
   font-weight: 400;
   font-family: "Mukta", sans-serif;
   text-transform: uppercase;
-  background-color: black;
+  background-color: #F88D2A;
   color: white;
+  border: none;
 }
 footer .footer__col4 p {
   font-size: 1.4rem;
@@ -797,7 +1634,138 @@ footer .footer__col4 .footer__texto-Social-Media a {
 }
 footer .footer__col4 .footer__texto-Social-Media a i {
   font-size: 24px;
-  color: black;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    padding: 34px 10%;
+    height: 100%;
+    background-color: #A1412B;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    grid-template-rows: auto;
+    text-transform: uppercase;
+  }
+  footer .footer__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Mukta", sans-serif;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+  }
+  footer .footer__col1 {
+    width: 100%;
+  }
+  footer .footer__col1 .footer__logo {
+    font-size: 3.4rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+    margin-bottom: 30px;
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+  }
+  footer .footer__col1 p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Mukta", sans-serif;
+    margin-bottom: 14px;
+    color: white;
+    text-align: center;
+  }
+  footer .footer__col1 .footer__copy {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Mukta", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+  }
+  footer .footer__col2 ul {
+    padding: 0;
+  }
+  footer .footer__col2 ul li {
+    list-style: none;
+    text-align: center;
+  }
+  footer .footer__col2 ul li .footer__links {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Mukta", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+  footer .footer__col3 .footer__col3_contenedor {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(2, 40px);
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  footer .footer__col3 .footer__col3_contenedor i {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+  footer .footer__col3 .footer__col3_contenedor a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Mukta", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  footer .footer__col4 .footer__boton-suscribirte {
+    display: flex;
+  }
+  footer .footer__col4 .footer__boton-suscribirte .boton-suscribirte__email {
+    width: 296px;
+    height: 40px;
+    background-color: white;
+    padding-left: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Mukta", sans-serif;
+    border: 0;
+  }
+  footer .footer__col4 .footer__boton-suscribirte .boton-suscribirte__boton {
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Mukta", sans-serif;
+    text-transform: uppercase;
+    background-color: #F88D2A;
+    color: white;
+    border: none;
+  }
+  footer .footer__col4 p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Mukta", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    margin: 24px 0 16px;
+    text-align: center;
+  }
+  footer .footer__col4 .footer__texto-Social-Media {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__col4 .footer__texto-Social-Media a {
+    padding-right: 10px;
+    text-decoration: none;
+  }
+  footer .footer__col4 .footer__texto-Social-Media a i {
+    font-size: 24px;
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=estilos-base.css.map */

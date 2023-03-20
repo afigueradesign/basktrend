@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,31 +24,37 @@
     <header class="header">
         <section class="header__contenedor">
                 <!--<img class="header__logo" src="" alt="">-->
-                <p class="header__logo"><a href="./index.html">Basktrend</a></p>
-                <ul class="header__menuNavegacion">
-                    <li><a href="./juegos.html">Juegos</a></li>
-                    <li><a href="./pase-de-liga.html">Pase de liga</a></li>
-                    <li><a href="#">Tienda</a></li>
-                    <li><a href="#">Boletos</a></li>
-                    <li><a href="./equipos.html">Equipos</a></li>
-                    <li><a href="#">Calendario</a></li>
-                    <li><a href="#">Estadísticas</a></li>
-                    <li><a href="#">Noticias</a></li>
-                </ul>
-                <ul class="header__menuRegistro">
-                    <li><a href="#">Ingresar</a></li>
-                    <span>|</span>
-                    <li><a href="#">Registrar</a></li>
-                </ul>
+                <a href="./index.html"><img    class="header__logo" src="https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/basktrend_logo.svg" alt=""></a>
+                <button id="menu-hamburguesa-abrir" class="menu-hamburguesa-abrir"><i class="fa-solid fa-bars"></i></button>
+                
+                
+                <nav id="nav" class="nav">
+                    <button id="menu-hamburguesa-cerrar" class="menu-hamburguesa-cerrar"><i class="fa-solid fa-xmark"></i></button>
+                    <ul class="header__menuNavegacion">
+                        <li><a href="./juegos.html">Juegos</a></a></li>
+                        <li><a href="./pase-de-liga.html">Pase de liga</a></li>
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">Boletos</a></li>
+                        <li><a href="./equipos.html">Equipos</a></li>
+                        <li><a href="#">Calendario</a></li>
+                        <li><a href="#">Estadísticas</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                
+                    <ul class="header__menuRegistro">
+                        <li><a href="#">Ingresar</a></li>
+                        <span>|</span>
+                        <li><a href="#">Registrar</a></li>
+                    </ul>
+                </nav>
     </header>
 
     <!--Hero-->
 
     <section class="hero-juegos">
         <div class="hero-juegos__textos">
-            <h1 class="titulo-Sección-h1">Sigue todos los juegos y recibe notificaciones para no perderte a tus equipos favoritos</h1>
+            <h1 class="titulo-Seccion-h1">Sigue todos los juegos y recibe notificaciones para no perderte a tus equipos favoritos</h1>
         </div>
-        <img src="" alt="">
     </section>
 
     <!--Fin Hero-->
@@ -60,8 +66,8 @@
             <img src="./iconos/flecha-izq.svg" alt="barra izquierda de días">
         </div>
         <div class="barra-dias__contenedor">
-                <p class="semana-dia">Dom</p>
-                <p class="numero-dia">25</p>  
+                <p class="semana-dia semana-dia-activo">Dom</p>
+                <p class="numero-dia numero-dia-activo">25</p>  
         </div>
         <div class="barra-dias__contenedor">
             <p class="semana-dia">Lun</p>
@@ -104,8 +110,10 @@
                 <div class="card-partidos__contenedor__equipos">
                    
                     <div class="equipo-col-izq">
-                        <img src="./img/Pelicans.png" alt="">
-                        <h3 class="titulo-Sección-h3">Pelicans</h3>
+                        <div class="equipo-cards-img">
+                            <img src="./img/Pelicans.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Pelicans</h3>
                         <p>25 - 13</p>
                     </div>
 
@@ -114,8 +122,10 @@
                     </div>
 
                     <div class="equipo-col-der">
-                        <img src="./img/lakers.png" alt="">
-                        <h3 class="titulo-Sección-h3">Lakers</h3>
+                        <div class="equipo-cards-img">
+                            <img src="./img/lakers.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Lakers</h3>
                         <p>28 - 10</p>
                     </div>
 
@@ -131,8 +141,41 @@
                 <div class="card-partidos__contenedor__equipos">
                    
                     <div class="equipo-col-izq">
-                        <img src="./img/Pelicans.png" alt="">
-                        <h3 class="titulo-Sección-h3">Pelicans</h3>
+                        <div class="equipo-cards-img">
+                            <img src="./img/jazz.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Jazz</h3>
+                        <p>20 - 19</p>
+                    </div>
+
+                    <div class="equipo-col-centro">
+                        <p>20:00</p>
+                    </div>
+
+                    <div class="equipo-col-der">
+                        <div class="equipo-cards-img">
+                            <img src="./img/knicks.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Knicks</h3>
+                        <p>24 - 15</p>
+                    </div>
+
+                </div>
+                <div class="card-partidos__contenedor__barraInferior">
+                    <a href="#">Seguir partido</a>
+                    <a href="#">Estadísticas</a>
+                    <a href="#">Seguir partido</a>
+                </div>
+            </div>
+
+            <div class="card-partidos__contenedor">
+                <div class="card-partidos__contenedor__equipos">
+                   
+                    <div class="equipo-col-izq">
+                        <div class="equipo-cards-img">
+                            <img src="./img/nuggets.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Nuggets</h3>
                         <p>25 - 13</p>
                     </div>
 
@@ -141,8 +184,41 @@
                     </div>
 
                     <div class="equipo-col-der">
-                        <img src="./img/lakers.png" alt="">
-                        <h3 class="titulo-Sección-h3">Lakers</h3>
+                        <div class="equipo-cards-img">
+                            <img src="./img/piston.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Pistons</h3>
+                        <p>32 - 8</p>
+                    </div>
+
+                </div>
+                <div class="card-partidos__contenedor__barraInferior">
+                    <a href="#">Seguir partido</a>
+                    <a href="#">Estadísticas</a>
+                    <a href="#">Seguir partido</a>
+                </div>
+            </div>
+
+            <div class="card-partidos__contenedor">
+                <div class="card-partidos__contenedor__equipos">
+                   
+                    <div class="equipo-col-izq">
+                        <div class="equipo-cards-img">
+                             <img src="./img/spurs.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Spurs</h3>
+                        <p>26 - 14</p>
+                    </div>
+
+                    <div class="equipo-col-centro">
+                        <p>20:00</p>
+                    </div>
+
+                    <div class="equipo-col-der">
+                        <div class="equipo-cards-img">
+                            <img src="./img/raptors.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Raptors</h3>
                         <p>28 - 10</p>
                     </div>
 
@@ -158,9 +234,11 @@
                 <div class="card-partidos__contenedor__equipos">
                    
                     <div class="equipo-col-izq">
-                        <img src="./img/Pelicans.png" alt="">
-                        <h3 class="titulo-Sección-h3">Pelicans</h3>
-                        <p>25 - 13</p>
+                        <div class="equipo-cards-img">
+                           <img src="./img/Warriors.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Warriors</h3>
+                        <p>25 - 15</p>
                     </div>
 
                     <div class="equipo-col-centro">
@@ -168,8 +246,10 @@
                     </div>
 
                     <div class="equipo-col-der">
-                        <img src="./img/lakers.png" alt="">
-                        <h3 class="titulo-Sección-h3">Lakers</h3>
+                        <div class="equipo-cards-img">
+                            <img src="./img/memphis.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Grizzlies</h3>
                         <p>28 - 10</p>
                     </div>
 
@@ -185,9 +265,11 @@
                 <div class="card-partidos__contenedor__equipos">
                    
                     <div class="equipo-col-izq">
-                        <img src="./img/Pelicans.png" alt="">
-                        <h3 class="titulo-Sección-h3">Pelicans</h3>
-                        <p>25 - 13</p>
+                        <div class="equipo-cards-img">
+                            <img src="./img/magic.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Magic</h3>
+                        <p>16 - 16</p>
                     </div>
 
                     <div class="equipo-col-centro">
@@ -195,63 +277,11 @@
                     </div>
 
                     <div class="equipo-col-der">
-                        <img src="./img/lakers.png" alt="">
-                        <h3 class="titulo-Sección-h3">Lakers</h3>
-                        <p>28 - 10</p>
-                    </div>
-
-                </div>
-                <div class="card-partidos__contenedor__barraInferior">
-                    <a href="#">Seguir partido</a>
-                    <a href="#">Estadísticas</a>
-                    <a href="#">Seguir partido</a>
-                </div>
-            </div>
-
-            <div class="card-partidos__contenedor">
-                <div class="card-partidos__contenedor__equipos">
-                   
-                    <div class="equipo-col-izq">
-                        <img src="./img/Pelicans.png" alt="">
-                        <h3 class="titulo-Sección-h3">Pelicans</h3>
-                        <p>25 - 13</p>
-                    </div>
-
-                    <div class="equipo-col-centro">
-                        <p>20:00</p>
-                    </div>
-
-                    <div class="equipo-col-der">
-                        <img src="./img/lakers.png" alt="">
-                        <h3 class="titulo-Sección-h3">Lakers</h3>
-                        <p>28 - 10</p>
-                    </div>
-
-                </div>
-                <div class="card-partidos__contenedor__barraInferior">
-                    <a href="#">Seguir partido</a>
-                    <a href="#">Estadísticas</a>
-                    <a href="#">Seguir partido</a>
-                </div>
-            </div>
-
-            <div class="card-partidos__contenedor">
-                <div class="card-partidos__contenedor__equipos">
-                   
-                    <div class="equipo-col-izq">
-                        <img src="./img/Pelicans.png" alt="">
-                        <h3 class="titulo-Sección-h3">Pelicans</h3>
-                        <p>25 - 13</p>
-                    </div>
-
-                    <div class="equipo-col-centro">
-                        <p>20:00</p>
-                    </div>
-
-                    <div class="equipo-col-der">
-                        <img src="./img/lakers.png" alt="">
-                        <h3 class="titulo-Sección-h3">Lakers</h3>
-                        <p>28 - 10</p>
+                        <div class="equipo-cards-img">
+                            <img src="./img/bucks.png" alt="">
+                        </div>
+                        <h3 class="titulo-Seccion-h3">Buks</h3>
+                        <p>30 - 8</p>
                     </div>
 
                 </div>
@@ -270,31 +300,42 @@
     <!-- últimas noticias -->
 
     <section class="ultimas-noticias">
-        <h2 class="titulo-Sección-h2">últimas noticias</h2>
+        <h2 class="titulo-Seccion-h2">últimas noticias</h2>
         <div class="ultimas-noticias__contenedor">
 
             <div class="ultimas-noticias__contenedor__cards">
-                <p class="ultimas-noticias__contenedor__cards__etiqueta-fehca">19 Dic</p>
-                <p class="ultimas-noticias__contenedor__cards__titulo-grande">Irvin en la mira de silver</p>
+                <div class="capa-fondo-negro"></div>
+
+                        <div class="ultimas-noticias__textos">
+                            <p class="ultimas-noticias__contenedor__cards__etiqueta-fehca">19 Dic</p>
+                            <p class="ultimas-noticias__contenedor__cards__titulo-grande">Irvin en la mira de silver</p>
+                        </div>                     
             </div>
 
             <div class="ultimas-noticias__contenedor__cards">
-                <p class="ultimas-noticias__contenedor__cards__etiqueta-fehca">19 Dic</p>
-                <p class="ultimas-noticias__contenedor__cards__titulo-pequeño">Durant “Solo quiero Jugar baloncesto”</p>
+                <div class="ultimas-noticias__textos">
+                    <p class="ultimas-noticias__contenedor__cards__etiqueta-fehca">19 Dic</p>
+                    <p class="ultimas-noticias__contenedor__cards__titulo-pequeño">Durant “Solo quiero Jugar baloncesto”</p>
+                </div>
             </div>
 
             <div class="ultimas-noticias__contenedor__cards">
-                <p class="ultimas-noticias__contenedor__cards__etiqueta-fehca">19 Dic</p>
-                <p class="ultimas-noticias__contenedor__cards__titulo-pequeño">Davis, otra lesión. fuera dos semanas.</p>
+                <div class="ultimas-noticias__textos">
+                    <p class="ultimas-noticias__contenedor__cards__etiqueta-fehca">19 Dic</p>
+                    <p class="ultimas-noticias__contenedor__cards__titulo-pequeño">Davis, otra lesión. fuera dos semanas.</p>
+                </div>
             </div>
         </div>
 
         <div class="ultimas-noticias__boton">
             <a href="#" class="boton-principal">Todas las noticias</a>
         </div>
-    </section>
+     </section>
 
-    <!-- Fin de últimas noticias -->
+
+     <!-- Fin de últimas noticias -->
+
+     <script src="js/main.js"></script>
     
 </body>
 <footer>

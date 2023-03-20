@@ -1,41 +1,112 @@
-.equipo-contenido-complementario{
-    padding: 0 5%;
+.equipo__tienda-oficial{
+    padding: 0 10%;
     margin: 100px 0;
 
-    
 
-    .equipo-contenido-complementario__articulos{
+    .titulo-Seccion-h2{
+        text-align: center;
+        margin-bottom: 40px;
 
-        .titulo-Sección-h1{
-            margin-bottom: 50px;
-            text-align: center;
-        }
+        
+    }
 
-
-        .equipo-contenido-complementario__contenedor{        
+    .equipo__tienda-oficial__contenedor{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        justify-items: center;
-
+        grid-template-columns: repeat(4, 295px);
+        grid-template-rows: 2fr;
+        justify-content: space-evenly;
 
         .equipo-contenido-complementario__contenido{
-            img{
-                margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr;
+            justify-items: center;            
+            
+            .tienda-oficial__img{
+                border: 2px solid $colorPrincipal;
+                border-radius: 10px;
+                padding: 20px;
                 
+                a{
+                    margin-bottom: 20px;
+                    
+                    img{
+                        width: 230px;
+                    }
+                }
             }
 
             p{
                 font-size: 2rem;
                 font-weight: 700;
                 font-family: $fuente1;
-                text-align: center;
+                text-transform: uppercase;
+                margin-top: 30px;
             }
         }
 
+
     }
 
-       
+    
 }
 
+@media screen and (max-width: 500px){
+    .equipo__tienda-oficial{
+        padding: 0 10%;
+        margin: 100px 0;
+    
+    
+        .titulo-Seccion-h2{
+            text-align: center;
+            margin-bottom: 40px;
+    
+            
+        }
+    
+        .equipo__tienda-oficial__contenedor{
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 2fr;
+            justify-content: space-evenly;
+            
+    
+            .equipo-contenido-complementario__contenido{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr;
+                justify-items: center;         
+                margin-bottom: 40px;   
+                
+                .tienda-oficial__img{
+                    border: 2px solid $colorPrincipal;
+                    border-radius: 10px;
+                    padding: 20px;
+                    
+                    a{
+                        margin-bottom: 20px;
+                        
+                        img{
+                            width: 230px;
+                        }
+                    }
+                }
+    
+                p{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    font-family: $fuente1;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                }
+            }
+    
+    
+        }
+    
+        
+    }
+    
+    
+    
 }

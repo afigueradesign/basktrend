@@ -55,3 +55,67 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .equipo__contenido-principal{
+        .estadisticas-Lakers{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            padding: 20px;
+            padding-left: 0;
+    
+    
+            .estadisticas-Lakers__logo{
+                display: flex;
+                align-items: center;
+    
+                img{
+                    height: 100px;
+                }
+    
+                .estadisticas-Lakers__logo__texto{
+                    padding-left: 34px;
+    
+                    .texto-ciudad{
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        font-family: $fuente1;
+                    }
+    
+                    .texto-nombreEquipo{
+                        font-size: 3rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                    }
+                }
+            }
+    
+            .estadisticas-Lakers__numeros{
+                display: grid;
+                grid-template-columns: repeat(3, 100px);
+                grid-template-rows: repeat(2, 80px);
+                row-gap: 12px;
+                align-items: center;
+                margin-top: 20px;
+                
+    
+                .estadisticas-Lakers__contenido{
+                    text-align: center;
+                    
+                    .estadisticas-Lakers__contenidoTop{
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        font-family: $fuente1;
+                    }
+                    .estadisticas-Lakers__contenidobottom{
+                        font-size: 2.4rem;
+                        font-weight: 300;
+                        font-family: $fuente1;
+                    }
+                }
+            }
+        }
+    }
+    
+}

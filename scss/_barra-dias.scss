@@ -16,13 +16,64 @@
             text-align: center;
             font-size: 1.8rem;
             font-weight: 700;
-            font-family: $fuente1;        
+            font-family: $fuente1;
+            color: #939393;        
          }    
+
+        .semana-dia-activo{
+            color: black;
+        }
+
         .numero-dia{
              text-align: center;
             font-size: 3rem;
             font-weight: 700;
-            font-family: $fuente1;        
+            font-family: $fuente1;
+            color: #939393;        
+        }
+
+        .numero-dia-activo{
+            color: black;
         }
     }
+}
+
+@media  screen and (max-width: 500px) {
+    .barra-dias{
+        display: flex;
+        justify-content: center;
+        margin: 70px 0 100px 0;
+        align-items: center;
+
+        .barra-dias__contenedor{  
+        
+            padding: 0 12px;
+           
+            .semana-dia{
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 700;
+                font-family: $fuente1;
+                color: #939393;        
+             }    
+    
+            .semana-dia-activo{
+                color: black;
+            }
+    
+            .numero-dia{
+                 text-align: center;
+                font-size: 1.6rem;
+                font-weight: 700;
+                font-family: $fuente1;
+                color: #939393;        
+            }
+    
+            .numero-dia-activo{
+                color: black;
+            }
+        }
+    
+    }
+    
 }

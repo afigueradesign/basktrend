@@ -1,8 +1,12 @@
 .hero-container {
     display: flex;
     align-items: center;
-    background-color: #F6F6F6;
-    height: 700px;
+    height: 800px;
+    background-image: url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/home%20banner%20hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+    
 
 
     .hero-textos{
@@ -13,6 +17,7 @@
             font-size: 5.2rem;
             font-family: $fuente1;   
             font-weight: 700;
+            color: white;
         }
         p{
             margin-top: 38px;
@@ -20,6 +25,7 @@
             font-family: $fuente2;   
             font-weight: 400;
             margin-bottom: 58px;
+            color: white;
         }
 
         a{
@@ -32,4 +38,55 @@
     .hero-img-prvisional{
         height: 700px;
     }
+}
+
+@media (max-width: 1440px){
+    .hero-container{
+        background-size: none;
+        background-position-y: -40px;
+        background-position-x: -350px;
+    }
+} 
+
+@media (max-width: 480px) {
+    .hero-container{
+        background-position-y: 0;
+        background-position-x: center;
+        height: 220px;
+        width: 100%;
+
+
+        .hero-textos{
+            padding: 0 5%;
+            width: 45%;
+            
+            h1{
+                font-size: 1.8rem;
+                font-family: $fuente1;   
+                font-weight: 700;
+                color: white;
+                margin-bottom: 20px;
+            }
+            p{
+                display: none
+            }
+    
+            a{
+                font-family: $fuente2;
+                font-weight: 400;
+                font-size: 1.4rem;
+                padding: 8px 16px;
+                border-radius: 4px;
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                background-color: $colorSecundario;
+                text-align: center;
+            }
+        }
+    }
+
+
+
+
 }

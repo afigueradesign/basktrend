@@ -1,13 +1,15 @@
 .hero-juegos{
     display: flex;
-    padding: 0 5%;
+    padding: 0 10%;
     align-items: center;
     height: 400px;
 
-    background-color: aqua;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 85.14%), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/banner-juegos.jpg);
 
     .hero-juegos__textos{
         @include titulo-h1;
+        width: 50%;
+        color: white;
         width: 50%;
 
         .hero-juegos__textos{
@@ -17,4 +19,39 @@
 
 
 
+}
+
+@media screen and (max-width: 500px) {
+
+    .hero-juegos{
+        display: flex;
+        padding: 0 10%;
+        align-items: center;
+        height: 300px;
+    
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 85.14%), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/banner-juegos.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+       
+       
+    
+
+        .hero-juegos__textos{
+            width: 50%;
+            color: white;
+            width: 70%;
+
+            .titulo-Seccion-h1{
+                font-size: 1.8rem;
+            }
+    
+            .hero-juegos__textos{
+                padding-right: 40px;
+            }
+        }
+    
+    
+    
+    }
+    
 }

@@ -1,11 +1,12 @@
 .ultimas-noticias{
-    padding: 0 5%;
+    padding: 0 10%;
     margin-top: 100px;
+    margin-bottom: 100px;
 
-    .titulo-Sección-h2{
+    .titulo-Seccion-h2{
         @include titulo-h2;
-        text-align: center;
-        margin-bottom: 46px;
+        text-align: left;
+        margin-bottom: 60px;
     }
 
     .ultimas-noticias__contenedor{
@@ -13,59 +14,81 @@
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: 100%;
         
-        
-
-      
 
         .ultimas-noticias__contenedor__cards{
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
+            
             height: 234px;
             margin-right: 20px;
             padding: 18px;
-            background-color: cadetblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+           
+
+           
+           
+               
+                .ultimas-noticias__textos{
+                    p{
+                        text-align: left;
+                    }
+                    .ultimas-noticias__contenedor__cards__etiqueta-fehca{
+                        background-color: red;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        color: white;
+                        width: 63px;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                    }
+        
+                    .ultimas-noticias__contenedor__cards__titulo-grande{
+                        font-size: 2.6rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        color: white;
+                    }
+        
+                    .ultimas-noticias__contenedor__cards__titulo-pequeño{
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        color: white;
+                        
+                    } 
+                }
+
+        }
+
+        .ultimas-noticias__contenedor__cards:nth-child(1){
+            background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/comisionado-home-noticia.jpg);
+            background-size: cover;
+            height: 260px;
             
-
-
-            p{
-                text-align: left;
-            }
-            .ultimas-noticias__contenedor__cards__etiqueta-fehca{
-                background-color: red;
-                font-size: 1.4rem;
-                font-weight: 700;
-                font-family: $fuente1;
-                color: white;
-                width: 63px;
-                padding: 10px;
-                margin-bottom: 10px;
-            }
-
-            .ultimas-noticias__contenedor__cards__titulo-grande{
-                font-size: 2.6rem;
-                font-weight: 700;
-                font-family: $fuente1;
-            }
-
-            .ultimas-noticias__contenedor__cards__titulo-pequeño{
-                font-size: 1.6rem;
-                font-weight: 700;
-                font-family: $fuente1;
-            }
-
+        }
+        .ultimas-noticias__contenedor__cards:nth-child(2){
+            background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/kevin-noticia-home.jpg);
+            background-size: cover;
+            background-position-x: -60px;
+            height: 260px;
+            
+        }
+        .ultimas-noticias__contenedor__cards:nth-child(3){
+            background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/david-herido.jpeg);
+            background-size: cover;
+            height: 260px;
+            margin-right: 0;
             
         }
 
         
-    }
 
-    .ultimas-noticias__contenedor__cards:nth-child(3){
-        margin-right: 0;
-    }
-   
-    
 
+                
+    }   
+           
+            
     .ultimas-noticias__boton{
         display: flex;
         justify-content: flex-end;
@@ -74,8 +97,112 @@
         .boton-principal{
             @include botonPrincipal;
         }
-       
-
         
     }
+}
+
+@media  screen and (max-width: 500px) {
+    .ultimas-noticias{
+        
+        padding: 0 10%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    
+        .titulo-Seccion-h2{
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    
+        .ultimas-noticias__contenedor{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-template-rows: auto;
+            
+    
+            .ultimas-noticias__contenedor__cards{
+                display: grid;
+                
+                height: 234px;
+                margin-right: 0;
+                padding: 18px;
+                display: grid;
+                margin-bottom: 20px;
+               
+    
+               
+               
+                   
+                    .ultimas-noticias__textos{
+                        p{
+                            text-align: left;
+                        }
+                        .ultimas-noticias__contenedor__cards__etiqueta-fehca{
+                            background-color: red;
+                            font-size: 1.4rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                            width: 63px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+            
+                        .ultimas-noticias__contenedor__cards__titulo-grande{
+                            font-size: 2.6rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                        }
+            
+                        .ultimas-noticias__contenedor__cards__titulo-pequeño{
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                            color: white;
+                            
+                        } 
+                    }
+    
+            }
+    
+            .ultimas-noticias__contenedor__cards:nth-child(1){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/comisionado-home-noticia.jpg);
+                background-size: cover;
+                height: 260px;
+                
+            }
+            .ultimas-noticias__contenedor__cards:nth-child(2){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/kevin-noticia-home.jpg);
+                background-size: cover;
+                background-position-x: -60px;
+                height: 260px;
+                
+            }
+            .ultimas-noticias__contenedor__cards:nth-child(3){
+                background: linear-gradient(rgba(#000000, 0.5), rgba(#000000, 0.5)), url(https://afigueradesign.000webhostapp.com/img/recursos%20para%20proyectos%20web/basktrend%20recursos%20web/david-herido.jpeg);
+                background-size: cover;
+                height: 260px;
+                margin-right: 0;
+                
+            }
+    
+            
+    
+    
+                    
+        }   
+               
+                
+        .ultimas-noticias__boton{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+    
+            .boton-principal{
+                @include botonPrincipal;
+            }
+            
+        }
+    }
+    
 }
