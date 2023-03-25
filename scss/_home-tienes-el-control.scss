@@ -11,22 +11,26 @@
 
     .tienesElControl__cards-contenedor{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(312px, 400px));
-        grid-template-rows: 312px;
+        height: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+        grid-template-rows: auto;
         justify-items: center;
+        justify-content: center;
         border-radius: 10px;
         background-color: $colorSecundario;
-        padding: 0;
+        padding: 80px 40px;
         
 
         .cards-contenedor__cards{            
             padding: 0px;
+           
 
             .cards__contenido{
                 display: grid;
                 grid-template-columns: 100%;
                 grid-template-rows: 246px 70px;
                 justify-items: center;
+                padding-top: 40px;
 
                 .cards__img{
                    
