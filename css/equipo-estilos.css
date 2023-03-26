@@ -261,14 +261,14 @@
 }
 .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__boton-conferencia a {
   font-family: "Mukta", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
   color: black;
   padding-right: 28px;
 }
 .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__boton-conferencia i {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__boton-conferencia:hover {
   background-color: #F88D2A;
@@ -303,6 +303,32 @@
   padding-right: 18px;
 }
 
+@media screen and (max-width: 1440px) {
+  .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__boton-conferencia a {
+    font-size: 1.8rem;
+  }
+  .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__boton-conferencia i {
+    font-size: 1.8rem;
+  }
+  .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__conferencia-oeste__Contenedor .equipo__aside__conferencia-oeste__equipos {
+    grid-template-columns: 15% 30% 45%;
+  }
+  .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__conferencia-oeste__Contenedor .equipo__aside__conferencia-oeste__equipos .conferencia-oeste-equipos__posicion {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__conferencia-oeste__Contenedor .equipo__aside__conferencia-oeste__equipos img {
+    width: 60px;
+    margin: 18px 0;
+  }
+  .equipo-contenedor .equipo-contenedor-top .equipo__aside .equipo__aside__conferencia-oeste__Contenedor .equipo__aside__conferencia-oeste__equipos .conferencia-oeste-equipos__nombre {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 10px;
+  }
+}
 @media screen and (max-width: 500px) {
   .equipo-contenedor .equipo-contenedor-top {
     display: grid;
@@ -558,9 +584,53 @@
 }
 .equipo__contenido-principal .estadisticas-Lakers {
   display: grid;
+  grid-template-rows: 180px;
+  padding-left: 27px;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers {
+  display: grid;
   grid-template-columns: 33.33% 66.67%;
   grid-template-rows: 180px;
   padding-left: 27px;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo {
+  display: flex;
+  align-items: center;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo img {
+  height: 100px;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo .estadisticas-Lakers__logo__texto {
+  padding-left: 34px;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo .estadisticas-Lakers__logo__texto .texto-ciudad {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo .estadisticas-Lakers__logo__texto .texto-nombreEquipo {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__numeros {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__numeros .estadisticas-Lakers__contenido {
+  text-align: center;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__numeros .estadisticas-Lakers__contenido .estadisticas-Lakers__contenidoTop {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.equipo__contenido-principal .estadisticas-Lakers .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__numeros .estadisticas-Lakers__contenido .estadisticas-Lakers__contenidobottom {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo {
   display: flex;
@@ -602,6 +672,35 @@
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+@media screen and (max-width: 1440px) {
+  .equipo__contenido-principal .estadisticas-Lakers {
+    grid-template-columns: 30% 70%;
+  }
+  .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo img {
+    height: 60px;
+  }
+  .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo .estadisticas-Lakers__logo__texto {
+    padding-left: 24px;
+  }
+  .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo .estadisticas-Lakers__logo__texto .texto-ciudad {
+    font-size: 1.4rem;
+  }
+  .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__logo .estadisticas-Lakers__logo__texto .texto-nombreEquipo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+  .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__numeros .estadisticas-Lakers__contenido .estadisticas-Lakers__contenidoTop {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+  .equipo__contenido-principal .estadisticas-Lakers .estadisticas-Lakers__numeros .estadisticas-Lakers__contenido .estadisticas-Lakers__contenidobottom {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+}
 @media screen and (max-width: 500px) {
   .equipo__contenido-principal .estadisticas-Lakers {
     display: grid;
@@ -725,14 +824,12 @@
   justify-content: space-between;
 }
 .equipo-contenedor .equipo__contenido-principal .mejor-jugador_otros-jugadores__contenedor .mejor-jugador_otros-jugadores__contenido .mejor-jugador_otros-jugadores__img {
-  display: flex;
-  align-items: flex-end;
+  margin-bottom: 20px;
   background: #F88D2A;
   box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
 }
-.equipo-contenedor .equipo__contenido-principal .mejor-jugador_otros-jugadores__contenedor .mejor-jugador_otros-jugadores__contenido .mejor-jugador_otros-jugadores__img .img {
-  margin-bottom: 16px;
-  object-fit: cover;
+.equipo-contenedor .equipo__contenido-principal .mejor-jugador_otros-jugadores__contenedor .mejor-jugador_otros-jugadores__contenido .mejor-jugador_otros-jugadores__img img {
+  width: 160px;
 }
 .equipo-contenedor .equipo__contenido-principal .mejor-jugador_otros-jugadores__contenedor .mejor-jugador_otros-jugadores__contenido p {
   font-size: 1.6rem;
@@ -741,6 +838,94 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1440px) {
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__img {
+    width: 450px;
+    height: 420px;
+    display: flex;
+    justify-items: flex-end;
+    background-color: #F88D2A;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__img img {
+    width: 450px;
+    object-fit: cover;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor {
+    padding-left: 20px;
+    padding-bottom: 70px;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor .mejor-jugador__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+    margin-bottom: 40px;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor .mejor-jugador__Nombre-jugador {
+    display: flex;
+    align-items: center;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor .mejor-jugador__Nombre-jugador .mejor-jugador__numero-jugador {
+    font-size: 4rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    background-color: #F88D2A;
+    padding: 10px;
+    color: white;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor .mejor-jugador__Nombre-jugador .mejor-jugador__nombre-jugador {
+    font-size: 3.4rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 700;
+    margin-left: 18px;
+    margin-top: 10px;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor .mejor-jugador__estadisticas__contenedor {
+    display: flex;
+    margin-top: 50px;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor .mejor-jugador__estadisticas__contenedor .mejor-jugador__estadisticas {
+    margin-right: 40px;
+    justify-content: center;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor .mejor-jugador__estadisticas__contenedor .mejor-jugador__estadisticas .mejor-jugador__estadisticas__nombreDatos {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador .mejor-jugador__contenedor .mejor-jugador__estadisticas__contenedor .mejor-jugador__estadisticas .mejor-jugador__estadisticas__numerosDatos {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador_otros-jugadores__contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    grid-template-rows: 1fr;
+    border: 2px solid black;
+    margin-left: 20px;
+    padding: 44px 30px 30px 30px;
+    justify-content: space-between;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador_otros-jugadores__contenedor .mejor-jugador_otros-jugadores__contenido .mejor-jugador_otros-jugadores__img {
+    margin-bottom: 20px;
+    background: #F88D2A;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador_otros-jugadores__contenedor .mejor-jugador_otros-jugadores__contenido .mejor-jugador_otros-jugadores__img img {
+    width: 120px;
+  }
+  .equipo-contenedor .equipo__contenido-principal .mejor-jugador_otros-jugadores__contenedor .mejor-jugador_otros-jugadores__contenido p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Mukta", sans-serif;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 500px) {
   .equipo-contenedor .equipo__contenido-principal .mejor-jugador {
     display: grid;

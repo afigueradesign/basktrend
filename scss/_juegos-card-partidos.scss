@@ -119,6 +119,133 @@
     }
 }
 
+
+@media screen and (max-width: 1440px) {
+
+    .card-partidos{  
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+       
+        padding: 0 10%;
+
+        .card-partidos__contenedor{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80% 20%;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 40px 40px 40px 40px;
+    
+    
+            .card-partidos__contenedor__equipos{
+                display: grid;
+                grid-template-columns: 40% 20% 40%;
+                padding-bottom: 10px;
+                justify-content: center;
+                
+                .equipo-col-izq{
+                    display: grid;
+                    
+                    grid-template-columns: 3fr;
+                    justify-items: center;
+    
+                    .equipo-cards-img{
+                        height: 100px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                    }
+    
+                    img{
+                        height: 84px;
+                    }
+                    h3{
+                        margin-bottom: 10px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        font-family: $fuente1;
+                        text-align: center;
+                        color: black;
+                    }
+    
+                }
+    
+                .equipo-col-centro{
+                    
+                    p{
+                        margin-top: 60px;
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                }
+    
+                .equipo-col-der{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-columns: 3fr;
+                    justify-content: center;
+    
+                    .equipo-cards-img{
+                        height: 100px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                    }
+    
+                    img{
+                        height: 84px;
+                    }
+    
+                    h3{
+                        margin-bottom: 10px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        font-family: $fuente1;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .card-partidos__contenedor__barraInferior{
+                display: flex;
+                justify-content: space-between;
+                border-top: solid #E3E3E3 1px;
+                padding: 20px 0 20px 0;
+    
+                a{
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    font-family: $fuente2;
+                    color: black;
+                    text-transform: uppercase;
+                }
+    
+            }
+        }
+    }
+
+
+}
+
+
+
+
 @media screen and (max-width: 500px) {
     .card-partidos{
 

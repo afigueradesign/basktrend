@@ -92,18 +92,18 @@
         
 
         .mejor-jugador_otros-jugadores__contenido{
-          
+            
             
             .mejor-jugador_otros-jugadores__img{
-                display: flex;
-                align-items: flex-end;
+                margin-bottom: 20px;
                 background: $colorSecundario;
                 box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
                 
+                
 
-                .img{
-                    margin-bottom: 16px;
-                   object-fit: cover;  
+                img{
+                    
+                    width: 160px;          
                 }
 
             }
@@ -120,6 +120,134 @@
     }
 
 }
+}
+
+@media screen and (max-width:1440px){
+
+    .equipo-contenedor{
+
+        .equipo__contenido-principal{
+        
+            .mejor-jugador{
+                display: flex;
+                margin-left: 20px;
+                align-items: center;
+                
+                .mejor-jugador__img{
+                    width: 450px;
+                    height: 420px;
+                    display: flex;
+                    justify-items: flex-end;
+                    
+                    background-color: $colorSecundario;           
+        
+                    img{
+                        width: 450px;
+                        object-fit: cover;
+                    }
+                }
+        
+                .mejor-jugador__contenedor{
+                    padding-left: 20px;
+                    padding-bottom: 70px;  
+        
+                    .mejor-jugador__titulo{
+                        font-size: 3rem;
+                        font-weight: 700;
+                        font-family: $fuente1;
+                        margin-bottom: 40px;
+                    }
+        
+                    .mejor-jugador__Nombre-jugador{
+                        display: flex;
+                        align-items: center;
+                        
+                        .mejor-jugador__numero-jugador{
+                            font-size: 4rem;
+                            font-family: $fuente1;
+                            font-weight: 700;
+                            background-color: $colorSecundario;
+                            padding: 10px;
+                            color: white;
+                        }
+        
+                        .mejor-jugador__nombre-jugador{
+                            font-size: 3.4rem;
+                            font-family: $fuente1;
+                            font-weight: 700;
+                            margin-left: 18px;
+                            margin-top: 10px;
+                        }
+                    }
+        
+                    .mejor-jugador__estadisticas__contenedor{
+                        display: flex;
+                        margin-top: 50px;
+                        
+        
+                      .mejor-jugador__estadisticas{
+                        margin-right: 40px;
+                        justify-content: center;
+        
+                        .mejor-jugador__estadisticas__nombreDatos{
+                            font-size: 2rem;
+                            font-weight: 300;
+                            font-family: $fuente1;
+                        }
+                        .mejor-jugador__estadisticas__numerosDatos{
+                            font-size: 3rem;
+                            font-weight: 700;
+                            font-family: $fuente1;
+                        }
+                      }  
+                    }
+        
+                }
+        
+            }
+        
+            .mejor-jugador_otros-jugadores__contenedor{
+                display: grid;
+                
+                grid-template-columns: repeat(5, 120px);
+                grid-template-rows: 1fr;
+                border: 2px solid black;
+                margin-left: 20px;
+                padding: 44px 30px 30px 30px;
+                justify-content: space-between;
+        
+                
+        
+                .mejor-jugador_otros-jugadores__contenido{
+                    
+                  
+                    
+                    .mejor-jugador_otros-jugadores__img{
+                        margin-bottom: 20px;
+                        background: $colorSecundario;
+                        box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+                        
+    
+                        img{
+                            width: 120px;          
+                        }
+        
+                    }
+                    
+                    p{
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        font-family: $fuente2;
+                        text-align: center;
+                    }
+                    
+                }
+            }
+        
+        }
+    }
+
+
 }
 
 @media screen and (max-width:500px) {
